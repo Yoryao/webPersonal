@@ -17,7 +17,11 @@
     - contacto
     - extra: regalo!
 2. implementaciones
-    -   responsive? 
+    - responsive?  
+    - degradado
+    - english
+    - volver a home
+    - mapa de palabras
 3. implementaciones pendientes
 4. hosting
 5. base de datos

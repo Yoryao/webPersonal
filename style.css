@@ -134,7 +134,7 @@ main {
   padding: 0;
   width: 200%;
   animation: linear;
-  animation: cambio 30s infinite alternate;
+  animation: cambio 5s infinite alternate;
   animation-timing-function: linear;
 }
 
@@ -164,6 +164,11 @@ main {
 main {
   background-color: khaki;
   /* height: 100vh; */
+}
+
+#repoMap{
+  border-radius: 10px;
+  max-width: 90%;
 }
 
 footer {
@@ -248,4 +253,15 @@ footer {
     height: 15vh;
     width: auto;
   }
+
+  .slider ul {
+    animation: cambio 30s infinite alternate;
+}
+
+#repoMap{
+  border-radius: 10px;
+  width: 75%;
+  align-items: center;
+  margin: auto;
+}
 }

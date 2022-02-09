@@ -39,9 +39,6 @@ fontawesome
 //Pantallas medianas (tablets de menos de 992px)
 @media (max-width: 991.98px) { ... }
 
-//Pantallas pequeñas (móviles en landscape de menos de 768px)
-@media (max-width: 767.98px) { ... }
-
 //Pantallas muy pequeñas (móviles en portrait de menos de 576px)
 @media (max-width: 575.98px) { ... }
 

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -14,13 +15,21 @@ body {
   color: #929292;
   cursor: pointer;
   width: 100%;
-  font-size: 1.5em;
+  font-size: 1.7em;
   /* flex-direction: row-reverse; */
 }
 
 i {
   padding-right: 10px;
   padding-left: 10px;
+}
+
+p {
+  font-size: 1.5em;
+  padding: 15px 20px 15px 20px;
+  margin: auto;
+  
+  text-align: left;
 }
 
 .menu,
@@ -41,7 +50,7 @@ i {
   display: block;
   padding: 20px;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
@@ -62,14 +71,47 @@ i {
   padding-left: 35px;
 }
 
+main {
+background: linear-gradient(to top, rgb(56, 56, 177), rgb(123, 123, 170));
+}
+
 .mostrar {
   margin-left: 0;
+}
+
+.section {
+  padding-top: 60px;
+  /* height: 100vh; */
+  height: 300px;
+  
+  border: 1px solid red;
+  text-align: center;
+}
+
+#sectionSobreMi {
+  width: 75%;
+  margin: auto;
+}
+
+.fa-house{
+  display: block;
+  border: 1px solid gold;
+  width: 100px;
+  height: 100px;
+  ;
 }
 
 @media (min-width: 1024px) {
   .nav-bar {
     display: none;
   }
+
+  #main-nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+      }
 
   .menu {
     margin-left: 0;
@@ -112,13 +154,27 @@ i {
   }
 }
 
+.section:last-child {
+  margin-bottom: 35px;
+}
+
+.section:first-child {
+  
+  font-size: 2em;
+  padding-top: 40px;
+}
 
 main {
     background-color: khaki;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 footer {
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
     background-color: grey;
     padding: 15px;
     color: rgb(236, 231, 231);

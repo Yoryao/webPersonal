@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=
     , initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1891929c91.js" crossorigin="anonymous"></script>
     <title>Jorge Joaquin Rivera - Desarrollador Front End</title>
 </head>
@@ -18,17 +21,17 @@
         
         <nav id="main-nav">
             <ul id="menu" class="menu">
-                <li class="menu__item"><a href="#" class="menu__link">Sobre mi</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Estudios</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Experiencia</a></li>
-                <li class="menu__item container-submenu"><a href="#" class="menu__link submenu-btn">Proyectos<i id="arrowIcon"class="fas fa-angle-down"></i></a>
+                <li class="menu__item"><a href="#sectionSobreMi" class="menu__link">Sobre mi</a></li>
+                <li class="menu__item"><a href="#sectionEstudios" class="menu__link">Estudios</a></li>
+                <li class="menu__item"><a href="#sectionExperiencia" class="menu__link">Experiencia</a></li>
+                <li class="menu__item container-submenu"><a href="#sectionProyectos" class="menu__link submenu-btn">Proyectos<i id="arrowIcon"class="fas fa-angle-down"></i></a>
                     <ul class="submenu">
                         <li class="menu__item"><a class="subMenu__item" href="#" class="menu__link">Proyecto ##</a></li>
                         <li class="menu__item"><a class="subMenu__item" href="#" class="menu__link">Proyecto ##</a></li>
                         <li class="menu__item"><a class="subMenu__item" href="#" class="menu__link">Proyecto ##</a></li>
                     </ul>
                 </li>
-                <li class="menu__item"><a href="#" class="menu__link">Contacto</a></li>
+                <li class="menu__item"><a href="#sectionContactos" class="menu__link">Contacto</a></li>
             </ul>
         </nav>
         
@@ -36,7 +39,23 @@
     
     
     
-    <main>Soy el main</main>
+    <main>
+        <section class="section" id="home">
+            <h1>Jorge Joaquin Rivera</h1>
+            <h3>Front End Developer</h3>
+
+        </section>
+        <section id="sectionSobreMi" class="section"><h3>Sobre Mi</h3>
+            <p>Soy una persona respetuosa, comprometida y trabajadora, disfruto de todos los aprendizajes, del trabajo en equipo y de la búsqueda de solución a los problemas habituales. </p>
+            <p>Poder incorporarme en una empresa donde poder desarrollar profesionalmente mi interés y pasión por las Tecnologías y la Programación, con foco en aplicaciones Web y Mobile. Formar parte de un grupo de trabajo con compromiso, dedicación y el desarrollo.</p>
+        
+        </section>
+        <section id="sectionEstudios" class="section"><h3>Estudios</h3></section>
+        <section id="sectionExperiencia" class="section"><h3>Experiencia</h3></section>
+        <section id="sectionProyectos" class="section"><h3>Proyectos</h3></section>
+        <section id="sectionContactos" class="section"><h3>Contactos</h3></section>
+
+    </main>
     
     
     
@@ -48,7 +67,7 @@
     
     
     
-    <footer>Soy el Footer</footer>
+    <footer>Soy el Footer<a href="#home"><i class="fa-solid fa-house" >home</i></a></footer>
     
     
     <script src="./index.js"></script>

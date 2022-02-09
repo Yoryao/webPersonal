@@ -22,6 +22,8 @@
     - english
     - volver a home
     - mapa de palabras
+    - map git al repo
+    - carrousel de tecnologias
 3. implementaciones pendientes
 4. hosting
 5. base de datos

@@ -100,12 +100,12 @@ main {
   height: 100px;
 }
 
-.imagenTecnologia{
+.imagenTecnologia {
   width: 33%;
 }
 
 #sectionTecnologias > h3 {
-  font-size: 1.5em ;
+  font-size: 1.5em;
 }
 
 #contenedorTecnologias {
@@ -123,31 +123,62 @@ main {
   height: 15vh;
 }
 
+.slider {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
 
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 200%;
+  animation: linear;
+  animation: cambio 30s infinite alternate;
+  animation-timing-function: linear;
+}
 
+.slider li {
+  width: 15%;
+  list-style: none;
+}
 
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
 
+.section:last-child {
+  margin-bottom: 35px;
+}
 
+.section:first-child {
+  font-size: 2em;
+  padding-top: 40px;
+}
 
+main {
+  background-color: khaki;
+  /* height: 100vh; */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer {
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: grey;
+  padding: 15px;
+  color: rgb(236, 231, 231);
+  text-align: center;
+  font-size: 1.2em;
+  /* flex-direction: row-reverse; */
+}
 
 @media (min-width: 1024px) {
   .nav-bar {
@@ -200,9 +231,9 @@ main {
     visibility: visible;
   }
   #sectionTecnologias > h3 {
-    font-size: 1.5em ;
+    font-size: 1.5em;
   }
-  
+
   #contenedorTecnologias {
     padding-top: 10px;
     display: flex;
@@ -211,42 +242,10 @@ main {
     height: 40vh;
     margin-bottom: 15px;
     font-size: 1.3em;
-    
   }
-  
+
   .imgTecnologia {
     height: 15vh;
     width: auto;
   }
-}
-
-.section:last-child {
-  margin-bottom: 35px;
-}
-
-.section:first-child {
-  font-size: 2em;
-  padding-top: 40px;
-}
-
-main {
-  background-color: khaki;
-  /* height: 100vh; */
-}
-
-
-
-
-footer {
-  display: inline-block;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  background-color: grey;
-  padding: 15px;
-  color: rgb(236, 231, 231);
-  text-align: center;
-  font-size: 1.2em;
-  /* flex-direction: row-reverse; */
 }

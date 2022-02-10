@@ -8,8 +8,8 @@
     , initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1891929c91.js" crossorigin="anonymous"></script>
     <title>Jorge Joaquin Rivera - Desarrollador Front End</title>
 </head>
@@ -18,14 +18,15 @@
     <header>
         <span class="nav-bar" id="btnMenu">
             <i class="fas fa-bars" id="menuBtn"></i>Menu</span>
-        
+
         <nav id="main-nav">
             <ul id="menu" class="menu">
                 <li class="menu__item"><a href="#sectionSobreMi" class="menu__link">Sobre mi</a></li>
                 <li class="menu__item"><a href="#sectionEstudios" class="menu__link">Estudios</a></li>
                 <li class="menu__item"><a href="#sectionTecnologias" class="menu__link">Tecnologias</a></li>
                 <li class="menu__item"><a href="#sectionExperiencia" class="menu__link">Experiencia</a></li>
-                <li class="menu__item container-submenu"><a href="#" class="menu__link submenu-btn">Proyectos<i id="arrowIcon"class="fas fa-angle-down"></i></a>
+                <li class="menu__item container-submenu"><a class="menu__link submenu-btn">Proyectos<i
+                            id="arrowIcon" class="fas fa-angle-down"></i></a>
                     <ul class="submenu">
                         <li class="menu__item"><a class="subMenu__item" href="#" class="menu__link">Proyecto ##</a></li>
                         <li class="menu__item"><a class="subMenu__item" href="#" class="menu__link">Proyecto ##</a></li>
@@ -37,26 +38,32 @@
                 <li class="menu__item"><a href="#sectionContactos" class="menu__link">Contacto</a></li>
             </ul>
         </nav>
-        
+
     </header>
-    
-    
-    
+
+
+
     <main>
-<!-- section home -->
+        <!-- SECTION HOME -->
         <section class="section" id="home">
             <h1>Jorge Joaquin Rivera</h1>
             <h3>Front End Developer</h3>
             <img id="photo" src="./public/FOTO PERFIL2.jpg" alt="personalPhotoJorgeRivera">
         </section>
-<!-- END SECTION HOME -->
+        <!-- END SECTION HOME -->
 
-<!-- SECTION SOBREMI -->
+        <!-- SECTION SOBREMI -->
         <section id="sectionSobreMi" class="section">
             <h3 id="titleSection">Sobre Mi</h3>
-                <div id="sobreMiContainer">
-                    <p class="sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ullam aliquam ea nesciunt beatae, nulla incidunt voluptatem mollitia quia tempore cum? Aspernatur veritatis tempore esse quod culpa, adipisci, enim consequatur beatae repudiandae ad earum inventore odit cum dicta. Asperiores, explicabo.</p>
-                    <p class="sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolores aperiam maxime a omnis ad accusamus tenetur ullam, pariatur hic corporis quam. Neque, soluta tempora eum voluptates enim impedit earum quo commodi deleniti obcaecati ea facere inventore iste omnis corrupti?</p>
+            <div id="sobreMiContainer">
+                <p class="sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ullam aliquam ea
+                    nesciunt beatae, nulla incidunt voluptatem mollitia quia tempore cum? Aspernatur veritatis tempore
+                    esse quod culpa, adipisci, enim consequatur beatae repudiandae ad earum inventore odit cum dicta.
+                    Asperiores, explicabo.</p>
+                <p class="sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolores aperiam
+                    maxime a omnis ad accusamus tenetur ullam, pariatur hic corporis quam. Neque, soluta tempora eum
+                    voluptates enim impedit earum quo commodi deleniti obcaecati ea facere inventore iste omnis
+                    corrupti?</p>
                 <div id="cvBtn">
                     <button>Ver Cv</button>
                     <button>Descargar Cv</button>
@@ -64,66 +71,110 @@
 
             </div>
         </section>
-<!-- END SECTION SOBREMI -->
+        <!-- END SECTION SOBREMI -->
 
-<!-- SECTION ESTUDIOS -->
+        <!-- SECTION ESTUDIOS -->
         <section id="sectionEstudios" class="section">
             <h3 id="titleSection">Estudios</h3>
             <div id="estudiosContainer">
-                <p class="sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ullam aliquam ea nesciunt beatae, nulla incidunt voluptatem mollitia quia tempore cum? Aspernatur veritatis tempore esse quod culpa, adipisci, enim consequatur beatae repudiandae ad earum inventore odit cum dicta. Asperiores, explicabo.</p>
-                <p class="sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolores aperiam maxime a omnis ad accusamus tenetur ullam, pariatur hic corporis quam. Neque, soluta tempora eum voluptates enim impedit earum quo commodi deleniti obcaecati ea facere inventore iste omnis corrupti?</p>
-        </div>
+                <p class="sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus ullam aliquam ea
+                    nesciunt beatae, nulla incidunt voluptatem mollitia quia tempore cum? Aspernatur veritatis tempore
+                    esse quod culpa, adipisci, enim consequatur beatae repudiandae ad earum inventore odit cum dicta.
+                    Asperiores, explicabo.</p>
+                <p class="sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolores aperiam
+                    maxime a omnis ad accusamus tenetur ullam, pariatur hic corporis quam. Neque, soluta tempora eum
+                    voluptates enim impedit earum quo commodi deleniti obcaecati ea facere inventore iste omnis
+                    corrupti?</p>
+            </div>
         </section>
-<!-- END SECTION ESTUDIOS -->
+        <!-- END SECTION ESTUDIOS -->
 
-<!-- SECTION TECNOLOGIES -->
-        <section id="sectionTecnologias" class="section">          <h3>Tecnologias</h3>
+        <!-- SECTION TECNOLOGIES -->
+        <section id="sectionTecnologias" class="section">
+            <h3>Tecnologias</h3>
             <div class="slider">
                 <ul>
                     <li><img class="imgTecnologia" id="imgTecnologiaHtml" src="./public/html5.png" alt="html-logo"></li>
                     <li><img class="imgTecnologia" id="imgTecnologiaCss" src="./public/css3.png" alt="css-logo"></li>
                     <li><img class="imgTecnologia" id="imgTecnologiaJs" src="./public/js.png" alt="js-logo"></li>
-                    <li><img class="imgTecnologia" id="imgTecnologiaReact" src="./public/react.png" alt="React-logo"></li>
-                    <li><img class="imgTecnologia" id="imgTecnologiaNodeJs" src="./public/nodejs2.png" alt="NodeJs-logo"></li>
-                    <li><img class="imgTecnologia" id="imgTecnologiaMySql" src="./public/mysql.png" alt="mySql-logo"></li>
+                    <li><img class="imgTecnologia" id="imgTecnologiaReact" src="./public/react.png" alt="React-logo">
+                    </li>
+                    <li><img class="imgTecnologia" id="imgTecnologiaNodeJs" src="./public/nodejs2.png"
+                            alt="NodeJs-logo"></li>
+                    <li><img class="imgTecnologia" id="imgTecnologiaMySql" src="./public/mysql.png" alt="mySql-logo">
+                    </li>
                     <li><img class="imgTecnologia" id="imgTecnologiaGit" src="./public/git.png" alt="Git-logo"></li>
-                    <li><img class="imgTecnologia" id="imgTecnologiaGitHub" src="./public/github.png" alt="GitHub-logo"></li>
+                    <li><img class="imgTecnologia" id="imgTecnologiaGitHub" src="./public/github.png" alt="GitHub-logo">
+                    </li>
                 </ul>
             </div>
         </section>
-        
- <!-- END SECTION TECNOLOGIES  -->
-        
-        
-        
-        <section id="sectionExperiencia" class="section"><h3>Experiencia</h3></section>
-        <section id="sectionProyectos" class="section"><h3>Proyectos</h3></section>
-        
+        <!-- END SECTION TECNOLOGIES  -->
+
+        <!-- SECTION EXPERIENCIA -->
+        <section id="sectionExperiencia" class="section">
+            <h3>Experiencia</h3>
+            <div>
+                <p class="sectionP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis obcaecati
+                    quis laudantium autem? Soluta nobis eligendi quos? Non totam nam necessitatibus maiores ullam labore
+                    ipsam, laborum, rerum aperiam quo dolorem.</p>
+                <p class="sectionP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis obcaecati
+                    quis laudantium autem? Soluta nobis eligendi quos? Non totam nam necessitatibus maiores ullam labore
+                    ipsam, laborum, rerum aperiam quo dolorem.</p>
+                <p class="sectionP">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis obcaecati
+                    quis laudantium autem? Soluta nobis eligendi quos? Non totam nam necessitatibus maiores ullam labore
+                    ipsam, laborum, rerum aperiam quo dolorem.</p>
+            </div>
+        </section>
+        <!-- END SECTION EXPERIENCIA  -->
+
+        <!-- SECTION PROYECTOS -->
+        <section id="sectionProyectos" class="section">
+            <h3>Proyectos</h3>
+                <div class="cardProyecto">
+                    <img class="imgProyect" src="./public/codigo.jpg" alt="codeImg">
+                    <h4>Nombre Proyecto</h4>
+                    <h6>Descripcion del Proyecto</h6>
+                </div>
+                <div class="cardProyecto">
+                    <img class="imgProyect" src="./public/codigo.jpg" alt="codeImg">
+                    <h4>Nombre Proyecto</h4>
+                    <h6>Descripcion del Proyecto</h6>
+                </div>
+        </section>
+        <!-- END SECTION PROYECTOS  -->
+
+
+
+
         <section id="sectionRepositorio" class="section">
             <h3>Repositorio</h3>
-            <a  href="https://github.com/Yoryao" target="_blanck"><img id="repoMap" src="./public/repoMap.JPG" alt="repoMap"></a>
+            <a href="https://github.com/Yoryao" target="_blanck"><img id="repoMap" src="./public/repoMap.JPG"
+                    alt="repoMap"></a>
         </section>
-    
-    
-        <section id="sectionContactos" class="section"><h3>Contactos</h3></section>
+
+
+        <section id="sectionContactos" class="section">
+            <h3>Contactos</h3>
+        </section>
 
     </main>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
     <footer>Soy el Footer
         <a href="#home" id="homeLink">home</i></a>
     </footer>
-    
-    
+
+
     <script src="./index.js"></script>
 </body>
 

@@ -84,6 +84,18 @@ main {
   background: linear-gradient(to top, rgb(56, 56, 177), rgb(123, 123, 170));
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 .mostrar {
   margin-left: 0;
 }
@@ -174,6 +186,16 @@ main {
   }
 }
 
+#sectionExperiencia {
+  height: 100vh;
+  width: 90%;
+  padding-top: 60px;
+  margin-left: 5%; 
+  margin-right: 5%;
+}
+}
+
+
 .section:last-child {
   margin-bottom: 35px;
 }
@@ -192,6 +214,41 @@ main {
   border-radius: 10px;
   max-width: 90%;
 }
+
+.cardProyecto {
+  width: 90%;
+  border: 1px solid salmon;
+  border-radius: 5%;
+  margin: 5px auto 5px auto;
+  padding-top: 10px;
+}
+
+.imgProyect {
+  width: 80%;
+  height: auto;
+  border-radius: 5%;
+}
+
+.imgProyect:hover{
+  filter: blur(4px);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
   display: inline-block;

@@ -10,13 +10,14 @@ body {
 
 .nav-bar {
   background-color: #2196f3;
+  margin-top: -1;
   padding: 15px;
   display: block;
-  color: #929292;
+  position: fixed;
+  color: white;
   cursor: pointer;
   width: 100%;
   font-size: 1.7em;
-  /* flex-direction: row-reverse; */
 }
 
 i {
@@ -40,6 +41,8 @@ p {
 }
 
 .menu {
+  position: fixed ;
+  margin-top: 63px;
   background: grey;
   width: 50%;
   margin-left: -100%;
@@ -71,6 +74,12 @@ p {
   padding-left: 35px;
 }
 
+#photo {
+  width: 35vh;
+  padding-top: 30px;
+  border-radius: 70%;
+}
+
 main {
   background: linear-gradient(to top, rgb(56, 56, 177), rgb(123, 123, 170));
 }
@@ -82,7 +91,7 @@ main {
 .section {
   /* padding-top: 60px; */
   /* height: 100vh; */
-  height: 300px;
+  height: 100vh;
 
   border: 1px solid red;
   text-align: center;

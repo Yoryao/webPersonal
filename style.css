@@ -97,9 +97,23 @@ main {
   text-align: center;
 }
 
-#sectionSobreMi {
-  width: 75%;
-  margin: auto;
+#sectionSobreMi, #sectionEstudios {
+  height: 100vh;
+  width: 90%;
+  padding-top: 60px;
+  margin-left: 5%; 
+  margin-right: 5%;
+}
+
+#titleSection {
+  font-size: 1.2em;
+  
+}
+
+.sectionP {
+    font-size: 1.1em;
+    margin: auto;
+    text-align: left; 
 }
 
 .fa-house {
@@ -109,15 +123,14 @@ main {
   height: 100px;
 }
 
-.imagenTecnologia {
-  width: 33%;
-}
-
-#sectionTecnologias > h3 {
+#sectionTecnologias {
   font-size: 1.5em;
+  height: 50vh;
+  padding-top: 65px;
+  border: 1px greenyellow solid;
 }
 
-#contenedorTecnologias {
+/* #contenedorTecnologias {
   height: 100%;
   padding-top: 10px;
   display: flex;
@@ -126,21 +139,22 @@ main {
   flex-wrap: wrap;
   margin-bottom: 15px;
   font-size: 1.3em;
-}
+} */
 
 .imgTecnologia {
   height: 15vh;
+  padding-left: 20px;
 }
 
 .slider {
-  width: 80%;
+  width: 90%;
   margin: auto;
   overflow: hidden;
+  border: #333 2px solid;
 }
 
 .slider ul {
   display: flex;
-  padding: 0;
   width: 200%;
   animation: linear;
   animation: cambio 5s infinite alternate;
@@ -148,7 +162,6 @@ main {
 }
 
 .slider li {
-  width: 15%;
   list-style: none;
 }
 
@@ -157,7 +170,7 @@ main {
     margin-left: 0;
   }
   100% {
-    margin-left: -100%;
+    margin-left: -230%;
   }
 }
 

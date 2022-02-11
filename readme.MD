@@ -24,6 +24,17 @@
     - mapa de palabras
     - map git al repo
     - carrousel de tecnologias
+    - nubes de palabras
+    - idiomas
+    - readme en la pagina
+    - link a las redes
+    - descargar certificados
+    - ver certificados
+    - agendar cita / llamado
+    - formulario de contacto
+- api wathsapp
+
+
 3. implementaciones pendientes
 4. hosting
 5. base de datos

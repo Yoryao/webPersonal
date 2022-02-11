@@ -169,7 +169,7 @@ main {
   display: flex;
   width: 200%;
   animation: linear;
-  animation: cambio 5s infinite alternate;
+  animation: cambio 2s infinite alternate;
   animation-timing-function: linear;
 }
 
@@ -193,11 +193,11 @@ main {
   margin-left: 5%; 
   margin-right: 5%;
 }
-}
+
 
 
 .section:last-child {
-  margin-bottom: 35px;
+  margin-bottom: 5px;
 }
 
 .section:first-child {
@@ -234,6 +234,10 @@ main {
   cursor: pointer;
 }
 
+#sectionRepositorio{
+  height: 50vh;
+  font-size: 1em;
+}
 
 
 
@@ -241,10 +245,17 @@ main {
 
 
 
+.imgContact{
+  width: 35%;
+}
 
+#contactContainer{
+  display: flex;  
+}
 
-
-
+#sectionContactos{
+    height: 30vh;
+}
 
 
 
@@ -257,10 +268,10 @@ footer {
   left: 0;
   bottom: 0;
   background-color: grey;
-  padding: 15px;
+  padding: 10px;
   color: rgb(236, 231, 231);
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.0em;
   /* flex-direction: row-reverse; */
 }
 
@@ -343,4 +354,11 @@ footer {
   align-items: center;
   margin: auto;
 }
+
+#repoMap:hover{
+  cursor: pointer;
+  width: 1.25%;
+  height: auto;
+}
+
 }

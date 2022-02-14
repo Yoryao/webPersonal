@@ -32,7 +32,9 @@
     - ver certificados
     - agendar cita / llamado
     - formulario de contacto
+    - metodologia bem
 - api wathsapp
+- poner readme en footer
 
 
 3. implementaciones pendientes

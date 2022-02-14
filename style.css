@@ -84,18 +84,6 @@ main {
   background: linear-gradient(to top, rgb(56, 56, 177), rgb(123, 123, 170));
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .mostrar {
   margin-left: 0;
 }
@@ -104,36 +92,49 @@ main {
   /* padding-top: 60px; */
   /* height: 100vh; */
   height: 100vh;
-
   border: 1px solid red;
   text-align: center;
 }
 
+/* ESTUDIOS */
+
 #sectionSobreMi, #sectionEstudios {
   height: 100vh;
-  width: 90%;
+  width: 95%;
   padding-top: 60px;
   margin-left: 5%; 
   margin-right: 5%;
-}
-
-#titleSection {
-  font-size: 1.2em;
-  
+  font-size: .7em;
 }
 
 .sectionP {
-    font-size: 1.1em;
     margin: auto;
     text-align: left; 
 }
 
-.fa-house {
-  display: block;
-  border: 1px solid gold;
-  width: 100px;
-  height: 100px;
+.imgArrow{
+  border: 1px black solid;
+  border-radius: 5%;
+  height: 15px;
+  margin-left: 15px;
+  align-items:flex-start;
+  justify-items:flex-start;
+  text-align: center;
+  padding-bottom: 0;
+ }
+
+.certificadosLista{
+  display: inline-flex;
+  flex-direction: column;
+  list-style: none;
+  align-items:flex-start;
+  justify-items:flex-start;
+  font-size: 1.3em;
+  padding-left: 0;
 }
+/* END ESTUDIOS */
+
+/* END TECNOLOGIAS */
 
 #sectionTecnologias {
   font-size: 1.5em;
@@ -141,17 +142,6 @@ main {
   padding-top: 65px;
   border: 1px greenyellow solid;
 }
-
-/* #contenedorTecnologias {
-  height: 100%;
-  padding-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin-bottom: 15px;
-  font-size: 1.3em;
-} */
 
 .imgTecnologia {
   height: 15vh;
@@ -169,7 +159,7 @@ main {
   display: flex;
   width: 200%;
   animation: linear;
-  animation: cambio 2s infinite alternate;
+  animation: cambio 6s infinite alternate;
   animation-timing-function: linear;
 }
 
@@ -182,9 +172,13 @@ main {
     margin-left: 0;
   }
   100% {
-    margin-left: -230%;
+    margin-left: -330%;
   }
 }
+
+/* END TECNOLOGIAS */
+
+/* EXPERIENCIA */
 
 #sectionExperiencia {
   height: 100vh;
@@ -192,8 +186,14 @@ main {
   padding-top: 60px;
   margin-left: 5%; 
   margin-right: 5%;
+  font-size: .9em;
 }
 
+.classExperiencia {
+  display: block;
+}
+
+/* END EXPERIENCIA */
 
 
 .section:last-child {
@@ -201,7 +201,6 @@ main {
 }
 
 .section:first-child {
-  font-size: 2em;
   padding-top: 40px;
 }
 
@@ -210,10 +209,6 @@ main {
   /* height: 100vh; */
 }
 
-#repoMap{
-  border-radius: 10px;
-  max-width: 90%;
-}
 
 .cardProyecto {
   width: 90%;
@@ -234,37 +229,61 @@ main {
   cursor: pointer;
 }
 
+
+/* REPOSITORIO */
 #sectionRepositorio{
-  height: 50vh;
-  font-size: 1em;
+  height: 45vh;
+  font-size: .8em;
+  padding-bottom: 50px;
 }
 
+#sectionRepositorio > p, h2 {
+  padding-top: 10px;
+}
+
+#sectionRepositorio > p > a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+}
+
+#repoMap{
+  padding: 10px auto 10px auto;
+  border-radius: 10px;
+  max-width: 90%;
+  }
+
+/* END REPOSITORIO */
 
 
+/* CONTACT */
+#sectionContactos{
+  height: 45vh;
+  font-size: .9em;
+  padding-bottom: 30px;
+}
 
-
-
-
-.imgContact{
-  width: 35%;
+#sectionContactos > p, h2 {
+  padding-top: 10px;
 }
 
 #contactContainer{
   display: flex;  
 }
 
-#sectionContactos{
-    height: 30vh;
+.imgContact{
+  width: 35%;
 }
 
+/* END CONTACT */
 
 
-
-
+/* FOOTER */
 footer {
-  display: inline-block;
+  display: flex;
   position: fixed;
   width: 100%;
+  height: 7vh;
   left: 0;
   bottom: 0;
   background-color: grey;
@@ -272,8 +291,31 @@ footer {
   color: rgb(236, 231, 231);
   text-align: center;
   font-size: 1.0em;
-  /* flex-direction: row-reverse; */
+  justify-content: space-between;
+  text-align: center;
 }
+.imgHome{
+  border: 1px black solid;
+  border-radius: 5%;
+  height: 95%;
+  margin-right: 10%;
+  
+}
+/* END FOOTER */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 1024px) {
   .nav-bar {

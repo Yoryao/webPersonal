@@ -1,7 +1,17 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Lora', serif;
 }
+
+/* TEXTOS */
+#home {
+  font-family: 'Poppins';
+  font-size: 1.5em;
+}
+
+
+
+
 
 body {
   border: 1px solid red;
@@ -17,7 +27,7 @@ body {
   color: white;
   cursor: pointer;
   width: 100%;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 i {
@@ -74,10 +84,13 @@ p {
   padding-left: 35px;
 }
 
+#role{
+  font-size: 1.2em;
+}
+
 #photo {
-  width: 35vh;
-  padding-top: 30px;
-  border-radius: 70%;
+  width: 50vh;
+  padding-top: 15px;
 }
 
 main {
@@ -87,6 +100,17 @@ main {
 .mostrar {
   margin-left: 0;
 }
+
+.section > h3 {
+  font-size: 2em;
+}
+
+.sectionP {
+  font-size: 1.2em;
+}
+
+
+
 
 .section {
   /* padding-top: 60px; */
@@ -98,13 +122,21 @@ main {
 
 /* ESTUDIOS */
 
-#sectionSobreMi, #sectionEstudios {
+#sectionSobreMi {
   height: 100vh;
   width: 95%;
   padding-top: 60px;
   margin-left: 5%; 
   margin-right: 5%;
-  font-size: .7em;
+  
+}
+
+ #sectionEstudios {
+  height: 100vh;
+  width: 95%;
+  padding-top: 50px;
+  margin-left: 5%; 
+  margin-right: 5%;
 }
 
 .sectionP {
@@ -201,7 +233,7 @@ main {
 }
 
 .section:first-child {
-  padding-top: 40px;
+  padding-top: 70px;
 }
 
 main {

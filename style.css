@@ -27,12 +27,12 @@ button {
 
 
 body {
-  border: 1px solid red;
+  background-color: #f8fcfb;
   margin: 0;
 }
 
 .nav-bar {
-  background-color: #2196f3;
+  background-color: #6892D5;
   margin-top: -1;
   padding: 15px;
   display: block;
@@ -66,7 +66,7 @@ p {
 .menu {
   position: fixed ;
   margin-top: 61px;
-  background: grey;
+  background: #79D1C3;
   width: 50%;
   margin-left: -100%;
   transition: all 0.5s;
@@ -93,7 +93,7 @@ p {
 }
 
 .submenu .menu__link {
-  background: #333;
+  background: #79D1C3;
   padding-left: 35px;
 }
 
@@ -107,7 +107,7 @@ p {
 }
 
 main {
-  background: linear-gradient(to top, rgb(56, 56, 177), rgb(123, 123, 170));
+  background: #F8FCFB;
 }
 
 .mostrar {
@@ -130,10 +130,7 @@ main {
 
 
 .section {
-  /* padding-top: 60px; */
-  /* height: 100vh; */
   height: 100vh;
-  border: 1px solid red;
   text-align: center;
 }
 
@@ -198,7 +195,6 @@ main {
 #sectionTecnologias {
   height: 50vh;
   padding-top: 55px;
-  border: 1px greenyellow solid;
 }
 
 .imgTecnologia {
@@ -217,7 +213,7 @@ main {
   display: flex;
   width: 200%;
   animation: linear;
-  animation: cambio 6s infinite alternate;
+  animation: cambio 10s infinite alternate;
   animation-timing-function: linear;
 }
 
@@ -230,7 +226,7 @@ main {
     margin-left: 0;
   }
   100% {
-    margin-left: -330%;
+    margin-left: -360%;
   }
 }
 
@@ -266,15 +262,8 @@ main {
   padding-top: 70px;
 }
 
-main {
-  background-color: khaki;
-  /* height: 100vh; */
-}
-
-
 .cardProyecto {
   width: 90%;
-  border: 1px solid salmon;
   border-radius: 5%;
   margin: 5px auto 5px auto;
   padding-top: 10px;
@@ -346,13 +335,14 @@ footer {
   height: 7vh;
   left: 0;
   bottom: 0;
-  background-color: grey;
+  background-color:#6892D5;
   padding: 10px;
-  color: rgb(236, 231, 231);
+  color: black;
   text-align: center;
   font-size: 1.0em;
   justify-content: space-between;
   text-align: center;
+  font-weight: 800 ;
 }
 .imgHome{
   border: 1px black solid;

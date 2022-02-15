@@ -29,6 +29,7 @@ button {
 body {
   background-color: #f8fcfb;
   margin: 0;
+  width: 100vw;
 }
 
 .nav-bar {
@@ -331,7 +332,7 @@ main {
 footer {
   display: flex;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 7vh;
   left: 0;
   bottom: 0;

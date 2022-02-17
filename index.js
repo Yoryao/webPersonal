@@ -5,9 +5,13 @@ const btnMenu = document.querySelector("#btnMenu");
 const menu = document.querySelector("#menu");
 
 btnMenu.addEventListener("click", function () {
-  console.log("funciona");
   menu.classList.toggle("mostrar");
 });
+
+const btnLi = document.querySelector("#menu");
+btnLi.addEventListener("click", function(){
+  menu.classList.toggle("mostrar");
+})
 
 const subMenubtn = document.querySelector(".submenu-btn");
 const flecha = document.querySelector(".fa-angle-down")

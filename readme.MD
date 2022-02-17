@@ -35,6 +35,8 @@
     - metodologia bem
 - api wathsapp
 - poner readme en footer
+- se utilizo snap scrolling
+
 
 
 3. implementaciones pendientes

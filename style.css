@@ -107,7 +107,7 @@ p {
   padding-top: 15px;
 }
 
-main {
+#main {
   background: #F8FCFB;
 }
 
@@ -291,12 +291,13 @@ main {
 
 #sectionProyectos{
   height: auto;
+  padding-top: 45px;
 }
 
 /* REPOSITORIO */
 #sectionRepositorio{
   height: 45vh;
-  padding-bottom: 50px;
+  padding-top: 45px;
 }
 
 #sectionRepositorio > p, h2 {
@@ -365,7 +366,21 @@ footer {
 }
 /* END FOOTER */
 
+.snapContainer {
+  height: 100vh;
+  overflow: auto; 
+  scroll-snap-type: y mandatory; 
+}
 
+.snapSection{
+  scroll-snap-align: start;
+  scroll-padding-top: 60vh;
+}
+
+.snapSectionCenter{
+  scroll-snap-align: center;
+  scroll-padding-top: 60vh;
+}
 
 
 

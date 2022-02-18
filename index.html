@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@100&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/1891929c91.js" crossorigin="anonymous"></script>
     <title>Jorge Joaquin Rivera - Desarrollador Front End</title>
 </head>
@@ -30,8 +32,10 @@
                             class="fas fa-angle-down"></i></a>
                     <ul class="submenu">
                         <li class="menu__item"><a class="subMenu__item" href="#" class="menu__link">E-Commerce</a></li>
-                        <li class="menu__item"><a class="subMenu__item" href="#" class="menu__link">Gestion Consultorio</a></li>
-                        <li class="menu__item"><a class="subMenu__item" href="#" class="menu__link">Portofolio Personal</a></li>
+                        <li class="menu__item"><a class="subMenu__item" href="#" class="menu__link">Gestion
+                                Consultorio</a></li>
+                        <li class="menu__item"><a class="subMenu__item" href="#" class="menu__link">Portofolio
+                                Personal</a></li>
                         <li class="menu__item"><a class="subMenu__item" href="#" class="menu__link">Formulario</a></li>
                     </ul>
                 </li>
@@ -64,30 +68,23 @@
                 <p class="sectionP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolores aperiam
                     maxime a omnis ad accusamus tenetur ullam, pariatur hic corporis quam. Neque, soluta tempora eum
                     voluptates enim impedit earum quo commodi?</p>
-               
-               
+
+
                 <div id="cvBtn">
-                    <button class="cvButton"><a href="#modalCv" >Ver Cv</a></button>
-                   
-                    
-                    
-                    <div  id="modalCv" class="modal">
+                    <button class="cvButton"><a href="#modalCv">Ver Cv</a></button>
+
+
+
+                    <div id="modalCv" class="modal">
                         <div class="modal-contenido">
-                            <a href="#" >cerrar</a>
-                            <img src="./public/cert js coder.jpg" alt="cvJorgeRivera">
+                            <button class="cvButton"> <a href="#">Cerrar</a></button>
+                            <img class="document" src="./docs/cvJpg.JPG" alt="Image of Cv">
                         </div>
                     </div>
 
-
-
-
-
-
-
-
-                    <button class="cvButton"><a href="./docs/CV JORGE RIVERA FRONT END - JANUARY 2022.pdf" download="">descargar Cv</a></button>
+                    <button class="cvButton"><a href="./docs/CV JORGE RIVERA FRONT END - FEBRERO 2022.pdf"
+                            download="">Descargar Cv</a> </button>
                 </div>
-
             </div>
         </section>
         <!-- END SECTION SOBREMI -->
@@ -104,7 +101,7 @@
                         titulo de 6to año en Asociación Argentina de Cultura Inglesa. Desde entonces, continuo
                         utilizando el idioma en mi vida laboral y personal.</p>
                 </div>
-                           </div>
+            </div>
         </section>
         <!-- END SECTION ESTUDIOS -->
 
@@ -112,28 +109,93 @@
         <section id="sectionCertificado" class="section snapSection">
             <h3 id="titleCertificado">Certificados</h3>
             <div id="certificadoContainer">
-                
-                    <ul class="certificadosLista">
-                        <li>JavaScript - Coderhouse - Dic. 2021<img class="imgArrow"
-                                src="./public/211719_cloud_download_icon.png" alt="donwloadArrow"><a href=""></a></img>
-                        </li>
-                        <li>ReactJS - CoderHouse - Ene. 2022<img class="imgArrow"
-                                src="./public/211719_cloud_download_icon.png" alt="donwloadArrow"><a href=""></a></img>
-                        </li>
-                        <li>Desarrollo Fullstack - UTN - Ago. 2021<img class="imgArrow"
-                                src="./public/211719_cloud_download_icon.png" alt="donwloadArrow"><a href=""></a></img>
-                        </li>
-                        <li>Idioma Ingles - AACI - 1992/2000<img class="imgArrow"
-                                src="./public/211719_cloud_download_icon.png" alt="donwloadArrow"><a href=""></a></img>
-                        </li>
-                        <li>Auditor Sist. de Gestión - Bureau Veritas - Mar. 2015<img class="imgArrow"
-                                src="./public/211719_cloud_download_icon.png" alt="donwloadArrow"><a href=""></a></img>
-                        </li>
-                        <li>Tec. Sup. Comunicación - Inst. Grafotécnico - 2005<img class="imgArrow"
-                                src="./public/211719_cloud_download_icon.png" alt="donwloadArrow"><a href=""></a></img>
-                        </li>
-                    </ul>
-                
+
+
+                <!-- <div id="cvBtn">
+                    <button class="cvButton"><a href="#modalCv">Ver Cv</a></button>
+
+
+
+                    <div id="modalCv" class="modal">
+                        <div class="modal-contenido">
+                            <button class="cvButton"> <a href="#">Cerrar</a></button>
+                            <img class="document" src="./docs/cvJpg.JPG" alt="Image of Cv">
+                        </div>
+                    </div> -->
+
+                <ul class="certificadosLista">
+
+
+                    <li>JavaScript - Coderhouse - Dic. 2021
+                        <a href="#modalJs">
+                            <img class="imgArrow" src="./public/9024708_magnifying_glass_plus_light_icon.png"
+                                alt="plus Glass"></img>
+                        </a>
+                    </li>
+
+                    <div id="modalJs" class="modal">
+                        <div class="modal-contenido">
+                            <button class="cvButton"><a href="#">Cerrar</a></button>
+                            <img class="document" src="./docs/certificadoJs.jpg" alt="Image of Js">
+                        </div>
+                    </div>
+
+                    <li>ReactJS - CoderHouse - Ene. 2022<a href="#modalReact"><img class="imgArrow"
+                                src="./public/9024708_magnifying_glass_plus_light_icon.png" alt="plus Glass"></img></a>
+                    </li>
+                    <div id="modalReact" class="modal">
+                        <div class="modal-contenido">
+                            <button class="cvButton"><a href="#">Cerrar</a></button>
+                            <img class="document" src="./docs/certificadoReactJs.png" alt="Image of ReactJs">
+                        </div>
+                    </div>
+
+                    <li>Desarrollo Fullstack - UTN - Ago. 2021<a href="#modalUtn"><img class="imgArrow"
+                                src="./public/9024708_magnifying_glass_plus_light_icon.png" alt="plus Glass"></img></a>
+                    </li>
+                    <div id="modalUtn" class="modal">
+                        <div class="modal-contenido">
+                            <button class="cvButton"><a href="#">Cerrar</a></button>
+                            <img class="document" src="./docs/certificadoUtn.jpg" alt="Image of Utn">
+                        </div>
+                    </div>
+
+                    <li>Idioma Ingles - AACI - 1992/2000<a href="#modalAaci"><img class="imgArrow"
+                                src="./public/9024708_magnifying_glass_plus_light_icon.png" alt="plus Glass"></img></a>
+                    </li>
+                    <div id="modalAaci" class="modal">
+                        <div class="modal-contenido">
+                            <button class="cvButton"><a href="#">Cerrar</a></button>
+                            <img class="document" src="./docs/certificadoAACI.jpeg" alt="Image of AACI">
+                        </div>
+                    </div>
+
+                    <li>Auditor Sist. de Gestión - Bureau Veritas - Mar. 2015<a href="#modalBV"><img class="imgArrow"
+                                src="./public/9024708_magnifying_glass_plus_light_icon.png" alt="plus Glass"></img></a>
+                    </li>
+                    <div id="modalBV" class="modal">
+                        <div class="modal-contenido">
+                            <button class="cvButton"><a href="#">Cerrar</a></button>
+                            <img class="document" src="./docs/certificadoBV.jpg" alt="Image of BV">
+                        </div>
+                    </div>
+
+                    <li>Tec. Sup. Comunicación - Inst. Grafotécnico - 2005<a href="#modalComunicacion"><img
+                                class="imgArrow" src="./public/9024708_magnifying_glass_plus_light_icon.png"
+                                alt="plus Glass"></img></a>
+                    </li>
+                    <div id="modalComunicacion" class="modal">
+                        <div class="modal-contenido">
+                            <button class="cvButton"><a href="#">Cerrar</a></button>
+                            <img class="document" src="#" alt="Image of Comunicacion">
+                        </div>
+                    </div>
+
+
+
+
+                </ul>
+
             </div>
         </section>
         <!-- END SECTION CERTIFICADOS -->
@@ -172,7 +234,8 @@
             <div>
                 <div class="cardExperiencia">
                     <h3 id="subtitle">Jefe de Auditoria - Grupo Servicios Maritimos (2014 - Actualidad)</h3>
-                    <p class="sectionP" id="experienciaP1">Gestión de proyectos integrales. gestión y Liderazgo de equipos especiales de
+                    <p class="sectionP" id="experienciaP1">Gestión de proyectos integrales. gestión y Liderazgo de
+                        equipos especiales de
                         trabajo. negociación/Mediación con Prefectura y staff Naviero. auditor Interno sobre Sistemas de
                         Gestión de Seguridad. análisis de incidentes, accidentes y desvíos en los sistemas de gestión
                         internos. Elaboración de propuestas comerciales / Redacción de acuerdos de trabajo.
@@ -182,7 +245,8 @@
                 </div>
                 <div class="cardExperiencia">
                     <h3 id="subtitle">Analista de Operaciones - VESSEL S.A. (2008 - 2014)</h3>
-                    <p class="sectionP" id="experienciaP2">Gestión de operaciones de la Flota. Confección de Planos de Carga. Gestión de
+                    <p class="sectionP" id="experienciaP2">Gestión de operaciones de la Flota. Confección de Planos de
+                        Carga. Gestión de
                         provisiones a bordo. Control de gastos y facturaciones. Confección de informes anuales de
                         rendimiento</p>
                 </div>
@@ -219,8 +283,8 @@
         <!-- SECTION REPOSITORIO -->
         <section id="sectionRepositorio" class="section snapSection">
             <h3>Repositorio</h3>
-            <p class="sectionP">Puedes ver el codigo de esta página junto con el resto de mis proyecto en mi repositorio de <a
-                    href="https://github.com/Yoryao" target="_blanck">GitHub</a></p>
+            <p class="sectionP">Puedes ver el codigo de esta página junto con el resto de mis proyecto en mi repositorio
+                de <a href="https://github.com/Yoryao" target="_blanck">GitHub</a></p>
             <a href="https://github.com/Yoryao" target="_blanck">
                 <img id="repoMap" src="./public/repoMap.JPG" alt="repoMap">
             </a>
@@ -230,7 +294,8 @@
         <!-- SECTION CONTACTOS -->
         <section id="sectionContactos" class="section snapSection">
             <h3>Contacto</h3>
-            <p class="sectionP" id="pContactos">Si te interesa mi perfil, tienes alguna consulta o sugerencia, o crees que te puedo
+            <p class="sectionP" id="pContactos">Si te interesa mi perfil, tienes alguna consulta o sugerencia, o crees
+                que te puedo
                 ayudar, no dudes en contactarme.</p>
             <div id="contactContainer">
                 <div><a href="https://www.linkedin.com/in/jorge-rivera-desarrollador-web/" target="_blanck"><img

@@ -3,6 +3,11 @@
   font-family: 'Quicksand', serif;
 }
 
+html {
+  scroll-behavior: smooth;
+
+}
+
 /* TEXTOS */
 #home {
   font-family: 'Lora', sans-serif;
@@ -47,9 +52,7 @@ button {
   text-transform: none;
   transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
   touch-action: manipulation;
-  width: auto;
-  will-change: transform,opacity;
-  
+  width: auto;  
 }
 
 .cvButton:hover {
@@ -57,11 +60,19 @@ button {
   color: #174ea6;
 }
 
+.document{
+  border-radius: 5%;
+  padding-top: 5px;
+  width: 95%;
+  height: auto;
+}
+
 /* MODAL */
 
 .modal-contenido{
   background-color:aqua;
-  width:300px;
+  border-radius: 5%;
+  width:95%;
   padding: 10px 20px;
   margin: 20% auto;
   position: relative;
@@ -75,7 +86,7 @@ button {
   left:0;  
   opacity: 0;
   pointer-events: none;
-  transition: all 2s;
+  transition: all 2s ease-in-out;
 }
 
 #modalCv:target{
@@ -83,7 +94,11 @@ button {
   pointer-events:auto;
 }
 
-
+#modalJs:target, #modalReact:target, #modalUtn:target, #modalAaci:target, #modalBV:target, #modalComunicacion:target {
+  opacity: 1;
+  pointer-events:auto;
+  cursor: pointer;
+}
 
 
 
@@ -131,7 +146,7 @@ p {
   background: #79D1C3;
   width: 50%;
   margin-left: -100%;
-  transition: all 0.5s;
+  transition: all 1s ease-in-out;
 }
 
 .menu__link {
@@ -232,13 +247,11 @@ p {
 
 .imgArrow{
   border: 1px black solid;
+  color: greenyellow;
   border-radius: 5%;
-  height: 15px;
-  margin-left: 15px;
-  align-items:flex-start;
-  justify-items:flex-start;
-  text-align: center;
-  padding-bottom: 0;
+  height: 22px;
+  margin-left: 10px;
+  vertical-align:text-top;
  }
 
 .certificadosLista{
@@ -246,8 +259,7 @@ p {
   flex-direction: column;
   list-style: none;
   align-items:flex-start;
-  justify-items:flex-start;
-  font-size: 1.1em;
+  font-size: 1.3em;
   padding-left: 0;
 }
 /* END ESTUDIOS */
@@ -431,6 +443,7 @@ footer {
   height: 100vh;
   overflow: auto; 
   scroll-snap-type: y mandatory; 
+
 }
 
 .snapSection{
@@ -441,6 +454,7 @@ footer {
 .snapSectionCenter{
   scroll-snap-align: center;
   scroll-padding-top: 60vh;
+ 
 }
 
 

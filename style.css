@@ -475,19 +475,24 @@ footer {
   }
 
   #main-nav {
+
     position: fixed;
     width: 100%;
-    left: 0;
-    top: 0;
+    height: 0px;
   }
 
   .menu {
+    display: inline;
+    height: 7vh;
     margin-left: 0;
     display: flex;
+    /* align-items: center; */
     justify-content: space-around;
     width: 100%;
     padding-left: 15%;
     padding-right: 15%;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .container-submenu {
@@ -496,8 +501,8 @@ footer {
 
   .submenu {
     position: absolute;
-    top: 63px;
-    width: 150px;
+    top: 7vh;
+    width: 15vw;
     overflow: visible;
     z-index: 1000;
     opacity: 0;
@@ -521,23 +526,105 @@ footer {
   }
 
 
-  #contenedorTecnologias {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 40vh;
-    margin-bottom: 15px;
+  #home {
+    height: 100vh;
+    font-size: 3em;
   }
 
-  .imgTecnologia {
-    height: 15vh;
-    width: auto;
+  #sectionSobreMi, #sectionEstudios, #sectionCertificado {
+    font-size: 1.8em;
   }
 
-  .slider ul {
-    animation: cambio 30s infinite alternate;
+  .cvButton {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 2.5vh;
+    font-weight: 500;
+    height: 4vh;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    padding: 12px 36px;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    touch-action: manipulation;
+    width: auto;  
+  }
+
+  #cvBtn{
+    padding-top: 5vh;
+  }
+
+  #sectionCertificado{
+    height: 100vh;
+  }
+  .certificadosLista > li {
+    padding-top: 2vh;
+    height: 5vh;
+    letter-spacing: 0.3vw;
+    align-items: unset;
+  }
+
+  .certificadosLista img {
+    height: 3.5vh;
+    border-radius: 5px;
+    align-items:unset;
+
+  }
+
+
+
+
+
+#sectionTecnologias {
+  height: 50vh;
+  padding-top: 55px;
 }
+
+.imgTecnologia {
+  height: 15vh;
+  padding-left: 20px;
+}
+
+.slider {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  border: #333 2px solid;
+}
+
+/* .slider ul {
+  display: flex;
+  width: 100%;
+  /* animation: linear;
+  animation: cambio 10s infinite alternate;
+  animation-timing-function: linear; 
+} */
+/* 
+.slider li {
+  list-style: none;
+} */
+
+/* @keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+} */
 
 #repoMap{
   border-radius: 10px;

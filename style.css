@@ -458,6 +458,37 @@ footer {
 }
 
 
+.cardProyecto {
+  width: 90%;
+  border-radius: 5%;
+  margin: 5px auto 5px auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #79D1C3;
+}
+
+.cardProyecto>h6{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.imgProyect {
+  width: 80%;
+  height: auto;
+  border-radius: 5%;
+  border: 1px solid black;
+}
+
+.imgProyect:hover{
+  filter: blur(4px);
+  cursor: pointer;
+}
+
+#sectionProyectos{
+  height: auto;
+  padding-top: 45px;
+}
+
 
 
 
@@ -531,7 +562,7 @@ footer {
     font-size: 3em;
   }
 
-  #sectionSobreMi, #sectionEstudios, #sectionCertificado {
+  #sectionSobreMi, #sectionEstudios, #sectionCertificado, #sectionTecnologias, #sectionExperiencia, #sectionProyectos {
     font-size: 1.8em;
   }
 
@@ -589,42 +620,82 @@ footer {
 
 
 #sectionTecnologias {
-  height: 50vh;
-  padding-top: 55px;
-}
+  height: 70vh;
+  padding-top: 60px;
+  scroll-snap-align: center;
+  scroll-padding-top: 60vh;
+  }
 
 .imgTecnologia {
   height: 15vh;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 .slider {
   width: 90%;
   margin: auto;
-  overflow: hidden;
   border: #333 2px solid;
 }
 
-/* .slider ul {
+.slider ul {
   display: flex;
   width: 100%;
-  /* animation: linear;
-  animation: cambio 10s infinite alternate;
-  animation-timing-function: linear; 
-} */
-/* 
-.slider li {
-  list-style: none;
-} */
+  display: flex;
+  justify-content: space-evenly;
+  animation: none;
+}
 
-/* @keyframes cambio {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -100%;
-  }
-} */
+
+.cardProyecto {
+  width: 35%;
+  border-radius: 5%;
+  margin: 1px auto 5px auto;
+  padding-top: 5px;
+  padding-bottom: 15px;
+  background-color: #79D1C3;
+}
+
+.cardProyecto>h6{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.imgProyect {
+  width: 80%;
+  height: auto;
+  border-radius: 5%;
+  border: 1px solid black;
+}
+
+.imgProyect:hover{
+  filter: blur(4px);
+  cursor: pointer;
+}
+
+#sectionProyectos{
+  height: auto;
+  padding-top: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #repoMap{
   border-radius: 10px;
@@ -635,7 +706,6 @@ footer {
 
 #repoMap:hover{
   cursor: pointer;
-  width: 1.25%;
   height: auto;
 }
 

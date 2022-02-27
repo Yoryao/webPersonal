@@ -1,21 +1,20 @@
 * {
   box-sizing: border-box;
-  font-family: 'Quicksand', serif;
+  font-family: "Quicksand", serif;
 }
 
 html {
   scroll-behavior: smooth;
-
 }
 
 /* TEXTOS */
 #home {
-  font-family: 'Lora', sans-serif;
+  font-family: "Lora", sans-serif;
   font-size: 1.5em;
   font-weight: 800;
 }
 
-#cvBtn{
+#cvBtn {
   padding-top: 10px;
 }
 button {
@@ -23,7 +22,7 @@ button {
   border-radius: 5px;
   text-decoration: none;
 }
-#cvBtn > button > a{
+#cvBtn > button > a {
   text-decoration: none;
 }
 
@@ -33,34 +32,36 @@ button {
   background-color: #fff;
   border-radius: 24px;
   border-style: none;
-  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
   box-sizing: border-box;
   color: #3c4043;
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 36px;
   justify-content: center;
-  letter-spacing: .25px;
+  letter-spacing: 0.25px;
   line-height: normal;
   max-width: 100%;
   padding: 2px 24px;
   text-align: center;
   text-transform: none;
-  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
   touch-action: manipulation;
-  width: auto;  
+  width: auto;
 }
 
 .cvButton:hover {
-  background: #F6F9FE;
+  background: #f6f9fe;
   color: #174ea6;
 }
 
-.document{
+.document {
   border-radius: 5%;
   padding-top: 5px;
   width: 95%;
@@ -69,38 +70,39 @@ button {
 
 /* MODAL */
 
-.modal-contenido{
-  background-color:aqua;
+.modal-contenido {
+  background-color: aqua;
   border-radius: 5%;
-  width:95%;
+  width: 95%;
   padding: 10px 20px;
   margin: 20% auto;
   position: relative;
 }
-.modal{
-  background-color: rgba(0,0,0,.8);
-  position:fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;  
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   opacity: 0;
   pointer-events: none;
   transition: all 2s ease-in-out;
 }
 
-#modalCv:target{
-  opacity: 1;
-  pointer-events:auto;
-}
 
-#modalJs:target, #modalReact:target, #modalUtn:target, #modalAaci:target, #modalBV:target, #modalComunicacion:target {
+
+#modalJs:target,
+#modalCv:target,
+#modalReact:target,
+#modalUtn:target,
+#modalAaci:target,
+#modalBV:target,
+#modalComunicacion:target {
   opacity: 1;
-  pointer-events:auto;
+  pointer-events: auto;
   cursor: pointer;
 }
-
-
 
 body {
   background-color: #f8fcfb;
@@ -109,7 +111,7 @@ body {
 }
 
 .nav-bar {
-  background-color: #6892D5;
+  background-color: #6892d5;
   margin-top: -1;
   padding: 15px;
   display: block;
@@ -141,9 +143,9 @@ p {
 }
 
 .menu {
-  position: fixed ;
+  position: fixed;
   margin-top: 61px;
-  background: #79D1C3;
+  background: #79d1c3;
   width: 50%;
   margin-left: -100%;
   transition: all 1s ease-in-out;
@@ -170,11 +172,11 @@ p {
 }
 
 .submenu .menu__link {
-  background: #79D1C3;
+  background: #79d1c3;
   padding-left: 35px;
 }
 
-#role{
+#role {
   font-size: 1.2em;
 }
 
@@ -184,7 +186,7 @@ p {
 }
 
 #main {
-  background: #F8FCFB;
+  background: #f8fcfb;
 }
 
 .mostrar {
@@ -199,12 +201,9 @@ p {
   font-size: 1.2em;
 }
 
-#subtitle{
+#subtitle {
   font-size: 1.5;
 }
-
-
-
 
 .section {
   height: 100vh;
@@ -217,48 +216,45 @@ p {
   height: 100vh;
   width: 95%;
   padding-top: 60px;
-  margin-left: 5%; 
+  margin-left: 5%;
   margin-right: 5%;
-  
 }
-
 
 #sectionCertificado {
   height: 60vh;
   width: 95%;
   padding-top: 60px;
-  margin-left: 5%; 
+  margin-left: 5%;
   margin-right: 5%;
-  
 }
 
- #sectionEstudios {
+#sectionEstudios {
   height: 100vh;
   width: 95%;
   padding-top: 50px;
-  margin-left: 5%; 
+  margin-left: 5%;
   margin-right: 5%;
 }
 
 .sectionP {
-    margin: auto;
-    text-align: left; 
+  margin: auto;
+  text-align: left;
 }
 
-.imgArrow{
+.imgArrow {
   border: 1px black solid;
   color: greenyellow;
   border-radius: 5%;
   height: 22px;
   margin-left: 10px;
-  vertical-align:text-top;
- }
+  vertical-align: text-top;
+}
 
-.certificadosLista{
+.certificadosLista {
   display: inline-flex;
   flex-direction: column;
   list-style: none;
-  align-items:flex-start;
+  align-items: flex-start;
   font-size: 1.3em;
   padding-left: 0;
 }
@@ -312,7 +308,7 @@ p {
   height: 100vh;
   width: 90%;
   padding-top: 60px;
-  margin-left: 5%; 
+  margin-left: 5%;
   margin-right: 5%;
 }
 
@@ -320,13 +316,13 @@ p {
   width: 100%;
 }
 
-#experienciaP1, #experienciaP2{
+#experienciaP1,
+#experienciaP2 {
   padding: 0;
   font-size: 1em;
 }
 
 /* END EXPERIENCIA */
-
 
 .section:last-child {
   margin-bottom: 45px;
@@ -342,10 +338,10 @@ p {
   margin: 5px auto 5px auto;
   padding-top: 10px;
   padding-bottom: 5px;
-  background-color: #79D1C3;
+  background-color: #79d1c3;
 }
 
-.cardProyecto>h6{
+.cardProyecto > h6 {
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -357,24 +353,30 @@ p {
   border: 1px solid black;
 }
 
-.imgProyect:hover{
+.imgProyect:hover {
   filter: blur(4px);
   cursor: pointer;
 }
 
-#sectionProyectos{
+#sectionProyectos {
   height: auto;
   padding-top: 45px;
 }
 
 /* REPOSITORIO */
-#sectionRepositorio{
+#sectionRepositorio {
   height: 45vh;
   padding-top: 45px;
 }
 
-#sectionRepositorio > p, h2 {
+#sectionRepositorio > p,
+h2 {
+  display: flex;
+  justify-content: center;
   padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  align-content: center;
 }
 
 #sectionRepositorio > p > a {
@@ -383,35 +385,34 @@ p {
   color: #000;
 }
 
-#repoMap{
+#repoMap {
   padding: 10px auto 10px auto;
   border-radius: 10px;
   max-width: 90%;
-  }
+}
 
 /* END REPOSITORIO */
 
-
 /* CONTACT */
-#sectionContactos{
+#sectionContactos {
   height: 45vh;
   padding-bottom: 30px;
 }
 
-#sectionContactos > p, h2 {
+#sectionContactos > p,
+h2 {
   padding-top: 10px;
 }
 
-#contactContainer{
-  display: flex;  
+#contactContainer {
+  display: flex;
 }
 
-.imgContact{
+.imgContact {
   width: 35%;
 }
 
 /* END CONTACT */
-
 
 /* FOOTER */
 footer {
@@ -421,42 +422,38 @@ footer {
   height: 7vh;
   left: 0;
   bottom: 0;
-  background-color:#6892D5;
+  background-color: #6892d5;
   padding: 10px;
   color: black;
   text-align: center;
-  font-size: 1.0em;
+  font-size: 1em;
   justify-content: space-between;
   text-align: center;
-  font-weight: 800 ;
+  font-weight: 800;
 }
-.imgHome{
+.imgHome {
   border: 1px black solid;
   border-radius: 5%;
   height: 95%;
   margin-right: 10%;
-  
 }
 /* END FOOTER */
 
 .snapContainer {
   height: 100vh;
-  overflow: auto; 
-  scroll-snap-type: y mandatory; 
-
+  overflow: auto;
+  scroll-snap-type: y mandatory;
 }
 
-.snapSection{
+.snapSection {
   scroll-snap-align: start;
   scroll-padding-top: 60vh;
 }
 
-.snapSectionCenter{
+.snapSectionCenter {
   scroll-snap-align: center;
   scroll-padding-top: 60vh;
- 
 }
-
 
 .cardProyecto {
   width: 90%;
@@ -464,10 +461,10 @@ footer {
   margin: 5px auto 5px auto;
   padding-top: 10px;
   padding-bottom: 5px;
-  background-color: #79D1C3;
+  background-color: #79d1c3;
 }
 
-.cardProyecto>h6{
+.cardProyecto > h6 {
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -479,26 +476,15 @@ footer {
   border: 1px solid black;
 }
 
-.imgProyect:hover{
+.imgProyect:hover {
   filter: blur(4px);
   cursor: pointer;
 }
 
-#sectionProyectos{
+#sectionProyectos {
   height: auto;
   padding-top: 45px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 1024px) {
   .nav-bar {
@@ -506,7 +492,6 @@ footer {
   }
 
   #main-nav {
-
     position: fixed;
     width: 100%;
     height: 0px;
@@ -556,14 +541,22 @@ footer {
     visibility: visible;
   }
 
-
   #home {
     height: 100vh;
     font-size: 3em;
   }
 
-  #sectionSobreMi, #sectionEstudios, #sectionCertificado, #sectionTecnologias, #sectionExperiencia, #sectionProyectos {
+  #sectionSobreMi,
+  #sectionEstudios,
+  #sectionCertificado,
+  #sectionTecnologias,
+  #sectionExperiencia,
+  #sectionProyectos,
+  #sectionRepositorio,
+  #sectionContactos,
+  #sectionContactos {
     font-size: 1.8em;
+    padding-top: 150px;
   }
 
   .cvButton {
@@ -572,33 +565,35 @@ footer {
     background-color: #fff;
     border-radius: 24px;
     border-style: none;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
+      rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
     box-sizing: border-box;
     color: #3c4043;
     cursor: pointer;
     display: inline-flex;
     fill: currentcolor;
-    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
     font-size: 2.5vh;
     font-weight: 500;
     height: 4vh;
     justify-content: center;
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
     line-height: normal;
     max-width: 100%;
     padding: 12px 36px;
     text-align: center;
     text-transform: none;
-    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
     touch-action: manipulation;
-    width: auto;  
+    width: auto;
   }
 
-  #cvBtn{
+  #cvBtn {
     padding-top: 5vh;
   }
 
-  #sectionCertificado{
+  #sectionCertificado {
     height: 100vh;
   }
   .certificadosLista > li {
@@ -608,77 +603,192 @@ footer {
     align-items: unset;
   }
 
-  .certificadosLista img {
-    height: 3.5vh;
-    border-radius: 5px;
-    align-items:unset;
+   #sectionTecnologias {
+    height: 70vh;
+    padding-top: 60px;
+    scroll-snap-align: center;
+    scroll-padding-top: 60vh;
+  }
 
+  .imgTecnologia {
+    height: 15vh;
+    margin: 0;
+    padding-left: 0;
+    justify-content: space-evenly;
+  }
+
+  .slider {
+    width: 90%;
+    margin: auto;
+    border: #333 2px solid;
+  }
+
+  .slider ul {
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    animation: none;
+  }
+
+  /* SECCION PROYECTO */
+
+  #cardContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px auto;
+  }
+
+  .cardProyecto {
+    width: 20%;
+    border-radius: 5%;
+    margin: 5px auto 5px auto;
+    padding: 10px 5px;
+    background-color: #79d1c3;
+  }
+
+  .cardProyecto > h6 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .imgProyect {
+    width: 90%;
+    border-radius: 5%;
+    border: 1px solid black;
+  }
+
+  .imgProyect:hover {
+    filter: none;
+    cursor: pointer;
+  }
+
+  #sectionProyectos {
+    height: 100vh;
+  }
+
+  #sectionRepositorio {
+    height: 100vh;
+  }
+
+  #sectionRepositorio > p {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  #repoMap {
+    border-radius: 50px;
+    width: 75%;
+    align-items: center;
+    margin: auto;
+  }
+
+  #repoMap:hover {
+    cursor: pointer;
+    height: auto;
+  }
+
+  #sectionContactos {
+    height: 100vh;
+    padding-top: 150px;
+  }
+
+  #sectionContactos > p {
+    text-align: center;
+  }
+
+  #contactContainer {
+    padding-top: 110px;
+
+    justify-content: space-evenly;
+  }
+
+  .imgContact {
+    width: 25%;
+  }
+
+  footer {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 7vh;
+    left: 0;
+    bottom: 0;
+    background-color: #6892d5;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    font-size: 1em;
+    justify-content: space-between;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.3em;
+    vertical-align: middle;
   }
 
 
 
+.footerLink {
+  text-decoration: none;
+  padding-left: 35px;
+}  
 
-
-#sectionTecnologias {
-  height: 70vh;
-  padding-top: 60px;
-  scroll-snap-align: center;
-  scroll-padding-top: 60vh;
-  }
-
-.imgTecnologia {
-  height: 15vh;
-  padding-left: 15px;
-}
-
-.slider {
-  width: 90%;
-  margin: auto;
-  border: #333 2px solid;
-}
-
-.slider ul {
-  display: flex;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  animation: none;
-}
-
-
-.cardProyecto {
-  width: 35%;
+.document {
   border-radius: 5%;
-  margin: 1px auto 5px auto;
-  padding-top: 5px;
-  padding-bottom: 15px;
-  background-color: #79D1C3;
+  padding-top: 10px;
+  width: auto;
+  height: 85vh;
 }
 
-.cardProyecto>h6{
-  padding-left: 5px;
-  padding-right: 5px;
+.documentCert {
+  border-radius: 5px;
+  padding-top: 10px;
+  width: auto;
+  height: 85vh;
 }
 
-.imgProyect {
-  width: 80%;
-  height: auto;
+#certJs {
   border-radius: 5%;
-  border: 1px solid black;
-}
-
-.imgProyect:hover{
-  filter: blur(4px);
-  cursor: pointer;
-}
-
-#sectionProyectos{
-  height: auto;
-  padding-top: 45px;
+  padding-top: 10px;
+  width: auto;
+  height: 85vh;
 }
 
 
 
+.modal-contenido {
+  background-color: aqua;
+  border-radius: 5%;
+  width: 65%;
+  height: 90vh;
+  padding: 3px 10px;
+  margin: 1% auto;
+  position: relative;
+}  
+.modal {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 2s ease-in-out;
+}  
+
+#modalJs:target,
+#modalCv:target ,
+#modalReact:target,
+#modalUtn:target,
+#modalAaci:target,
+#modalBV:target,
+#modalComunicacion:target {
+  opacity: 1;
+  pointer-events: auto;
+}  
 
 
 
@@ -688,25 +798,5 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-#repoMap{
-  border-radius: 10px;
-  width: 75%;
-  align-items: center;
-  margin: auto;
-}
-
-#repoMap:hover{
-  cursor: pointer;
-  height: auto;
-}
 
 }

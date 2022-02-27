@@ -78,8 +78,10 @@
                     <div id="modalCv" class="modal">
                         <div class="modal-contenido">
                             <button class="cvButton"> <a href="#">Cerrar</a></button>
+                            <div>
                             <img class="document" src="./docs/cvJpg.JPG" alt="Image of Cv">
                         </div>
+                    </div>
                     </div>
 
                     <button class="cvButton"><a href="./docs/CV JORGE RIVERA FRONT END - FEBRERO 2022.pdf"
@@ -123,7 +125,7 @@
                     <div id="modalJs" class="modal">
                         <div class="modal-contenido">
                             <button class="cvButton"><a href="#">Cerrar</a></button>
-                            <img class="document" src="./docs/certificadoJs.jpg" alt="Image of Js">
+                            <img id="certJs"class="documentCert" src="./docs/certificadoJs.jpg" alt="Image of Js">
                         </div>
                     </div>
 
@@ -133,7 +135,7 @@
                     <div id="modalReact" class="modal">
                         <div class="modal-contenido">
                             <button class="cvButton"><a href="#">Cerrar</a></button>
-                            <img class="document" src="./docs/certificadoReactJs.png" alt="Image of ReactJs">
+                            <img class="documentCert" src="./docs/certificadoReactJs.png" alt="Image of ReactJs">
                         </div>
                     </div>
 
@@ -143,7 +145,7 @@
                     <div id="modalUtn" class="modal">
                         <div class="modal-contenido">
                             <button class="cvButton"><a href="#">Cerrar</a></button>
-                            <img class="document" src="./docs/certificadoUtn.jpg" alt="Image of Utn">
+                            <img class="documentCert" src="./docs/certificadoUtn.jpg" alt="Image of Utn">
                         </div>
                     </div>
 
@@ -153,7 +155,7 @@
                     <div id="modalAaci" class="modal">
                         <div class="modal-contenido">
                             <button class="cvButton"><a href="#">Cerrar</a></button>
-                            <img class="document" src="./docs/certificadoAACI.jpeg" alt="Image of AACI">
+                            <img class="documentCert" src="./docs/certificadoAACI.jpeg" alt="Image of AACI">
                         </div>
                     </div>
 
@@ -163,7 +165,7 @@
                     <div id="modalBV" class="modal">
                         <div class="modal-contenido">
                             <button class="cvButton"><a href="#">Cerrar</a></button>
-                            <img class="document" src="./docs/certificadoBV.jpg" alt="Image of BV">
+                            <img class="documentCert" src="./docs/certificadoBV.jpg" alt="Image of BV">
                         </div>
                     </div>
 
@@ -174,7 +176,7 @@
                     <div id="modalComunicacion" class="modal">
                         <div class="modal-contenido">
                             <button class="cvButton"><a href="#">Cerrar</a></button>
-                            <img class="document" src="#" alt="Image of Comunicacion">
+                            <img class="documentCert" src="#" alt="Image of Comunicacion">
                         </div>
                     </div>
 
@@ -244,8 +246,10 @@
         <!-- SECTION PROYECTOS -->
         <section id="sectionProyectos" class="section snapSection">
             <h3>Proyectos</h3>
+        
+            <div id="cardContainer">
             <div class="cardProyecto snapSectionCenter">
-                <img class="imgProyect" src="/public/proyectoFCCportfolio.JPG" alt="fotoProyectoPortfolio">
+                <img class="imgProyect" src="/public/proyectoFCCportfolio2.jpg" alt="fotoProyectoPortfolio">
                 <h4>Portfolio Personal</h4>
                 <h6>Primer portfolio realizado con HTML y CSS.</h6>
             </div>
@@ -261,9 +265,10 @@
             </div>
             <div class="cardProyecto snapSectionCenter">
                 <img class="imgProyect" src="./public/proyectoCoderCentroMedico.JPG" alt="fotoProyectoCentroMedico">
-                <h4>Gestion de Consultorio</h4>
+                <h4>Gestión de Consultorio</h4>
                 <h6>Proyecto de Gestion para consultorios, realizado con HTML, CSS, JS y Jquery</h6>
             </div>
+        </div>
         </section>
         <!-- END SECTION PROYECTOS  -->
 
@@ -271,10 +276,10 @@
         <section id="sectionRepositorio" class="section snapSection">
             <h3>Repositorio</h3>
             <p class="sectionP">Puedes ver el codigo de esta página junto con el resto de mis proyecto en mi repositorio
-                de <a href="https://github.com/Yoryao" target="_blanck">GitHub</a></p>
-            <a href="https://github.com/Yoryao" target="_blanck">
-                <img id="repoMap" src="./public/repoMap.JPG" alt="repoMap">
-            </a>
+                de <a href="https://github.com/Yoryao" target="_blanck">GitHub</a>.</p>
+                
+                <img id="repoMap" src="./public/repoMap.jpg" alt="repoMap">
+                <a href="https://github.com/Yoryao" target="_blanck"></a>
         </section>
         <!-- END SECTION REPOSITORIO  -->
 
@@ -286,10 +291,10 @@
                 ayudar, no dudes en contactarme.</p>
             <div id="contactContainer">
                 <div><a href="https://www.linkedin.com/in/jorge-rivera-desarrollador-web/" target="_blanck"><img
-                            class="imgContact" src="./public/linkedin.png" alt="linkedinLogo"></a></div>
+                            class="imgContact" src="./public/inIconContac.png" alt="linkedinLogo"></a></div>
                 <div><a href="https://wa.me/541136188888" target="_blanck"><img class="imgContact"
-                            src="./public/whatsapp.png" alt="whatsappLogo"></a></div>
-                <div><a href="mailto:jorgejoaquinrivera@gmail.com"><img class="imgContact" src="./public/gmail.png"
+                            src="./public/waIconContact.png" alt="whatsappLogo"></a></div>
+                <div><a href="mailto:jorgejoaquinrivera@gmail.com"><img class="imgContact" src="./public/gmIconContact.png"
                             alt="gmailLogo"></a></div>
             </div>
         </section>
@@ -299,8 +304,19 @@
 
     <!-- SECTION FOOTER -->
     <footer>
-        <div>Design & Develop by Jorge Rivera (2022)</div>
-        <div><a href="#"><img class="imgHome" src="./public/iconHome.png" alt="homeIcon"></a></div>
+        <div id="footerText">Design & Develop by Jorge Rivera. Update Febreary 2022.
+            
+            <a class="footerLink" href="https://github.com/Yoryao/webPersonal" target="_blanck">Web Repo</a>
+            <a class="footerLink" href="https://github.com/Yoryao/webPersonal/blob/main/readme.MD" target="_blanck">Readme.MD</a>
+
+
+        </div>
+
+
+
+        <div><a href="#">
+            <img class="imgHome" src="./public/iconHome.png" alt="homeIcon">
+        </a></div>
     </footer>
     <!-- END SECTION FOOTER  -->
 

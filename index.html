@@ -23,23 +23,23 @@
 
         <nav id="main-nav">
             <ul id="menu" class="menu">
-                <li class="menu__item"><a href="#sectionSobreMi" class="menu__link">Sobre mi</a></li>
-                <li class="menu__item"><a href="#sectionEstudios" class="menu__link">Estudios</a></li>
-                <li class="menu__item"><a href="#sectionCertificado" class="menu__link">Certificados</a></li>
-                <li class="menu__item"><a href="#sectionTecnologias" class="menu__link">Tecnologias</a></li>
-                <li class="menu__item"><a href="#sectionExperiencia" class="menu__link">Experiencia</a></li>
-                <li class="menu__item container-submenu"><a class="menu__link submenu-btn">Proyectos<i id="arrowIcon"
+                <li class="menu__item btnMenuSinProyecto"><a href="#sectionSobreMi" class="menu__link">Sobre mi</a></li>
+                <li class="menu__item btnMenuSinProyecto"><a href="#sectionEstudios" class="menu__link">Estudios</a></li>
+                <li class="menu__item btnMenuSinProyecto"><a href="#sectionCertificado" class="menu__link">Certificados</a></li>
+                <li class="menu__item btnMenuSinProyecto"><a href="#sectionTecnologias" class="menu__link">Tecnologias</a></li>
+                <li class="menu__item btnMenuSinProyecto"><a href="#sectionExperiencia" class="menu__link">Experiencia</a></li>
+                <li id="liExcepcion" class="menu__item container-submenu"><a class="menu__link submenu-btn">Proyectos<i id="arrowIcon"
                             class="fas fa-angle-down"></i></a>
-                    <ul class="submenu">
-                        <li class="menu__item"><a class="subMenu__item" href="#sectionProyectos" class="menu__link">Primer Portfolio</a></li>
-                        <li class="menu__item"><a class="subMenu__item" href="#sectionProyectos" class="menu__link">Formulario Encuesta</a></li>
-                        <li class="menu__item"><a class="subMenu__item" href="#sectionProyectos" class="menu__link">E-Commerce</a></li>
-                        <li class="menu__item"><a class="subMenu__item" href="#sectionProyectos" class="menu__link">Gestion de Consultorio</a></li>
+                    <ul class="submenu" id="subMenuId">
+                        <li class="menu__item btnMenuProyecto"><a class="subMenu__item" href="#proyectoPortfolio" class="menu__link">Primer Portfolio</a></li>
+                        <li class="menu__item btnMenuProyecto"><a class="subMenu__item" href="#proyectoFormulario" class="menu__link">Formulario Encuesta</a></li>
+                        <li class="menu__item btnMenuProyecto"><a class="subMenu__item" href="#proyectoCommerce" class="menu__link">E-Commerce</a></li>
+                        <li class="menu__item btnMenuProyecto"><a class="subMenu__item" href="#proyectoGestion" class="menu__link">Gestion de Consultorio</a></li>
                     </ul>
                 </li>
-                <li class="menu__item"><a href="#sectionRepositorio" class="menu__link">Repositorio</a></li>
+                <li class="menu__item btnMenuSinProyecto"><a href="#sectionRepositorio" class="menu__link">Repositorio</a></li>
 
-                <li class="menu__item"><a href="#sectionContactos" class="menu__link">Contacto</a></li>
+                <li class="menu__item btnMenuSinProyecto"><a href="#sectionContactos" class="menu__link">Contacto</a></li>
             </ul>
         </nav>
 
@@ -246,27 +246,27 @@
             <h3>Proyectos</h3>
         
             <div id="cardContainer">
-            <div class="cardProyecto snapSectionCenter">
+            <div id="proyectoPortfolio" class="cardProyecto snapSectionCenter">
                 <a href="https://yoryao.github.io/personalPortfolioFreeCodeCamp/" target="_blanck">
                 <img class="imgProyect" src="/public/proyectoFCCportfolio2.jpg" alt="fotoProyectoPortfolio">
             </a>
                 <h4>Portfolio Personal</h4>
                 <h6>Primer portfolio realizado con HTML y CSS.</h6>
             </div>
-            <div class="cardProyecto snapSectionCenter">
+            <div id="proyectoFormulario" class="cardProyecto snapSectionCenter">
                 <a href="https://yoryao.github.io/SurveyForm/" target="_blanck">
                 <img class="imgProyect" src="./public/surveyFreeCodeCamp.JPG" alt="fotoProyectoFormulario">
             </a><h4>Formulario Encuesta</h4>
                 <h6>Formulario realizado en FCC.</h6>
             </div>
-            <div class="cardProyecto snapSectionCenter">
+            <div id="proyectoCommerce" class="cardProyecto snapSectionCenter">
                 <a href="https://github.com/Yoryao/almaBohemiaVelas-Rivera" target="_blanck">
                 <img class="imgProyect" src="./public/proyectoEcomerce.JPG" alt="fotoProyectoEcommerce">
                
             </a> <h4>E-Commerce</h4>
                 <h6>Proyecto de E-Commerce realizado con ReactJs y Firebase.</h6>
             </div>
-            <div class="cardProyecto snapSectionCenter">
+            <div id="proyectoGestion" class="cardProyecto snapSectionCenter">
                 <a href="https://yoryao.github.io/proyectoFinal/index.html" target="_blanck">
                 <img class="imgProyect" src="./public/proyectoCoderCentroMedico.JPG" alt="fotoProyectoCentroMedico">
                
@@ -280,8 +280,7 @@
         <!-- SECTION REPOSITORIO -->
         <section id="sectionRepositorio" class="section snapSection">
             <h3>Repositorio</h3>
-            <p class="sectionP">Puedes ver el codigo de esta página junto con el resto de mis proyecto en mi repositorio en
-                 <a href="https://github.com/Yoryao" target="_blanck">&nbspGitHub.</a></p>
+            <a href="https://github.com/Yoryao" target="_blanck" id="repoLink"><p class="sectionP">Puedes ver el codigo de esta página junto con el resto de mis proyecto en mi repositorio en<b>&nbspGitHub.</b></p></a>
                 
                 
                 <a href="https://github.com/Yoryao" target="_blanck"><img id="repoMap" src="./public/repoMap.jpg" alt="repoMap"></a>
@@ -319,7 +318,7 @@
 
 
 
-        <div><a href="#">
+        <div><a href="#home">
             <img class="imgHome" src="./public/iconHome.png" alt="homeIcon">
         </a></div>
     </footer>

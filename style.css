@@ -528,12 +528,12 @@ footer {
   .subMenu__item {
     background-color: rgb(128, 235, 220);
     display: block;
-    width: 160px;
-    height: 45px;
+    width: 190px;
+    height: 70px;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 5px;
     font-size: 1.3em;
+    text-decoration: none;
   }
 
   .container-submenu:hover .submenu {
@@ -743,16 +743,19 @@ footer {
 }
 
 .documentCert {
-  border-radius: 5px;
+  border-radius: 5%;
   padding-top: 10px;
   width: auto;
   height: 85vh;
 }
 
-#certJs {
-  border-radius: 5%;
-  padding-top: 10px;
-  width: auto;
+#imgAaci{
+  width: 90%;
+  height: 85vh;
+}
+
+#imgBV{
+  width: 89%;
   height: 85vh;
 }
 

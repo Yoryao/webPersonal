@@ -97,15 +97,14 @@ button {
   transition: all 2s ease-in-out;
 }
 
-
-
 #modalJs:target,
 #modalCv:target,
 #modalReact:target,
 #modalUtn:target,
 #modalAaci:target,
 #modalBV:target,
-#modalComunicacion:target {
+#modalComunicacion:target,
+#modalEducacionIt:target {
   opacity: 1;
   pointer-events: auto;
   cursor: pointer;
@@ -178,16 +177,12 @@ p {
   transition: all 0.3s;
 }
 
-
-
-
-
 .menu__item {
   padding-left: 15px;
   text-decoration: none;
 }
 
-.menu__item > a{
+.menu__item > a {
   text-decoration: none;
   color: white;
   padding-bottom: 3px;
@@ -196,6 +191,10 @@ p {
 .submenu .menu__link {
   background: #79d1c3;
   padding-left: 35px;
+}
+
+#sobreMiContainer > p {
+  font-size: 1.1em;
 }
 
 #role {
@@ -221,6 +220,7 @@ p {
 
 .sectionP {
   font-size: 1.2em;
+  width: 95%;
 }
 
 #subtitle {
@@ -237,7 +237,7 @@ p {
 #sectionSobreMi {
   height: 100vh;
   width: 95%;
-  padding-top: 60px;
+  padding-top: 45px;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -264,6 +264,7 @@ p {
 }
 
 #repoLink {
+  text-align: center;
   text-decoration: none;
 }
 
@@ -345,7 +346,7 @@ p {
 #experienciaP1,
 #experienciaP2 {
   padding: 0;
-  font-size: .9em;
+  font-size: 0.9em;
 }
 
 /* END EXPERIENCIA */
@@ -355,7 +356,7 @@ p {
 }
 
 .section:first-child {
-  padding-top: 70px;
+  padding-top: 50px;
 }
 
 .cardProyecto {
@@ -396,12 +397,9 @@ p {
 
 #sectionRepositorio > p,
 h2 {
-  display: flex;
-  justify-content: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  align-items: center;
-  align-content: center;
+  text-align: center;
 }
 
 #sectionRepositorio > p > a {
@@ -570,7 +568,6 @@ footer {
     font-size: 3em;
   }
 
-  #sectionSobreMi,
   #sectionEstudios,
   #sectionCertificado,
   #sectionTecnologias,
@@ -580,8 +577,14 @@ footer {
   #sectionContactos,
   #sectionContactos {
     font-size: 1.8em;
-    padding-top: 150px;
+    padding-top: 135px;
   }
+
+  #sectionSobreMi {
+    font-size: 1.8em;
+    padding-top: 120px;
+  }
+
 
   .cvButton {
     align-items: center;
@@ -627,7 +630,7 @@ footer {
     align-items: unset;
   }
 
-   #sectionTecnologias {
+  #sectionTecnologias {
     height: 70vh;
     padding-top: 60px;
     scroll-snap-align: center;
@@ -711,7 +714,6 @@ footer {
 
   #repoMap:hover {
     cursor: pointer;
-    height: auto;
   }
 
   #sectionContactos {
@@ -752,78 +754,74 @@ footer {
     vertical-align: middle;
   }
 
+  .footerLink {
+    text-decoration: none;
+    padding-left: 35px;
+  }
 
+  .document {
+    border-radius: 5%;
+    padding-top: 10px;
+    width: auto;
+    height: 85vh;
+  }
 
-.footerLink {
-  text-decoration: none;
-  padding-left: 35px;
-}  
+  .documentCert {
+    border-radius: 5%;
+    padding-top: 10px;
+    width: auto;
+    height: 85vh;
+  }
 
-.document {
-  border-radius: 5%;
-  padding-top: 10px;
-  width: auto;
-  height: 85vh;
-}
+  #imgAaci {
+    width: 89%;
+    height: 80vh;
+  }
 
-.documentCert {
-  border-radius: 5%;
-  padding-top: 10px;
-  width: auto;
-  height: 85vh;
-}
+  #imgBV {
+    width: 89%;
+    height: 83vh;
+  }
 
-#imgAaci{
-  width: 90%;
-  height: 85vh;
-}
+  #imgEducacionIT {
+    width: 90%;
+    height: 83vh;
+  }
 
-#imgBV{
-  width: 89%;
-  height: 85vh;
-}
+  #imgPeriodismo {
+    width: 90%;
+    height: 83vh;
+  }
 
+  .modal-contenido {
+    background-color: aqua;
+    border-radius: 5%;
+    width: 65%;
+    height: 90vh;
+    padding: 3px 10px;
+    margin: 1% auto;
+    position: relative;
+  }
+  .modal {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 2s ease-in-out;
+  }
 
-
-.modal-contenido {
-  background-color: aqua;
-  border-radius: 5%;
-  width: 65%;
-  height: 90vh;
-  padding: 3px 10px;
-  margin: 1% auto;
-  position: relative;
-}  
-.modal {
-  background-color: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 2s ease-in-out;
-}  
-
-#modalJs:target,
-#modalCv:target ,
-#modalReact:target,
-#modalUtn:target,
-#modalAaci:target,
-#modalBV:target,
-#modalComunicacion:target {
-  opacity: 1;
-  pointer-events: auto;
-}  
-
-
-
-
-
-
-
-
-
-
+  #modalJs:target,
+  #modalCv:target,
+  #modalReact:target,
+  #modalUtn:target,
+  #modalAaci:target,
+  #modalBV:target,
+  #modalComunicacion:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
 }

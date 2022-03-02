@@ -135,7 +135,7 @@ i {
 
 p {
   font-size: 1.5em;
-  padding: 15px 20px 15px 20px;
+  padding: 15px 20px 15px 10px;
   margin: auto;
 
   text-align: left;
@@ -194,7 +194,7 @@ p {
 }
 
 #sobreMiContainer > p {
-  font-size: 1.1em;
+  font-size: .8em;
 }
 
 #role {
@@ -219,7 +219,7 @@ p {
 }
 
 .sectionP {
-  font-size: 1.2em;
+  font-size: .9em; /*NOCAMBIAR*/
   width: 95%;
 }
 
@@ -237,7 +237,7 @@ p {
 #sectionSobreMi {
   height: 100vh;
   width: 95%;
-  padding-top: 45px;
+  padding-top: 35px;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -281,8 +281,8 @@ p {
   display: inline-flex;
   flex-direction: column;
   list-style: none;
-  align-items: flex-start;
-  font-size: 1.3em;
+  /* align-items: flex-start; */
+  font-size: 1.1em;
   padding-left: 0;
 }
 /* END ESTUDIOS */
@@ -335,6 +335,7 @@ p {
   height: 100vh;
   width: 90%;
   padding-top: 50px;
+  padding-bottom: 30px;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -356,7 +357,7 @@ p {
 }
 
 .section:first-child {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .cardProyecto {
@@ -382,11 +383,6 @@ p {
 
 .imgProyect:hover {
   cursor: pointer;
-}
-
-#sectionProyectos {
-  height: auto;
-  padding-top: 45px;
 }
 
 /* REPOSITORIO */
@@ -449,7 +445,7 @@ footer {
   padding: 10px;
   color: black;
   text-align: center;
-  font-size: 1em;
+  font-size: .7em;
   justify-content: space-between;
   text-align: center;
   font-weight: 800;
@@ -505,7 +501,7 @@ footer {
 
 #sectionProyectos {
   height: auto;
-  padding-top: 45px;
+  padding-top: 80px;
 }
 
 @media (min-width: 1024px) {
@@ -739,7 +735,7 @@ footer {
     display: flex;
     position: fixed;
     width: 100vw;
-    height: 7vh;
+    height: 6vh;
     left: 0;
     bottom: 0;
     background-color: #6892d5;

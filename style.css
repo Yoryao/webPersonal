@@ -1,3 +1,30 @@
+/* Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
 * {
   box-sizing: border-box;
   font-family: "Quicksand", serif;
@@ -6,7 +33,7 @@
 html {
   scroll-behavior: smooth;
 }
-
+/*
 /* TEXTOS */
 #home {
   font-family: "Lora", sans-serif;
@@ -113,7 +140,7 @@ button {
 body {
   background-color: #f8fcfb;
   margin: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 .nav-bar {
@@ -412,51 +439,75 @@ h2 {
 
 /* END REPOSITORIO */
 
-/* CONTACT */
+/* CONTACT-------------------------------------------------*/
 #sectionContactos {
-  height: 45vh;
   padding-bottom: 30px;
 }
 
 #sectionContactos > p,
-h2 {
-  padding-top: 10px;
+h2,h3 {
+  width: 90%;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #contactContainer {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .imgContact {
   width: 35%;
 }
 
-/* END CONTACT */
+/* END CONTACT--------------------------------------------*/
 
-/* FOOTER */
+/*FOOTER--------------------------------------------------*/
 footer {
   display: flex;
+  align-items: center;
   position: fixed;
-  width: 100vw;
-  height: 7vh;
+  width: 100%;
+  height: 8vh;
   left: 0;
   bottom: 0;
   background-color: #6892d5;
-  padding: 10px;
   color: black;
-  text-align: center;
-  font-size: .7em;
   justify-content: space-between;
-  text-align: center;
-  font-weight: 800;
+ }
+
+#footerText {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
 }
-.imgHome {
-  border: 1px black solid;
+
+#footerImgContainer{
+padding-right: 10px;
+}
+
+#footerImgHome {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  color:black;
+  border: black 1px solid;
   border-radius: 5%;
-  height: 95%;
-  margin-right: 10%;
 }
-/* END FOOTER */
+
+#footerText > p, a  {
+  display: inline;
+  font-size: .8em;
+  text-align: left;
+}
+.footerLink {
+  color:green;
+  text-decoration: none;
+}
+
+/* END FOOTER------------------------------------------------*/
 
 .snapContainer {
   height: 100vh;

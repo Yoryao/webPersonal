@@ -47,7 +47,7 @@
 
 
 
-    <div id="main" class="snapContainer">
+    <div id="main" >
         <!-- SECTION HOME -->
         <section class="section snapSection" id="home">
             <h1>Jorge Rivera</h1>
@@ -309,31 +309,21 @@
         </section>
         <!-- END SECTION PROYECTOS  -->
 
-        <!-- SECTION REPOSITORIO -->
-        <section id="sectionRepositorio" class="section snapSection">
-            <h3>Repositorio</h3>
-            <a href="https://github.com/Yoryao" target="_blanck" id="repoLink">
-                <p class="sectionP">Puedes ver el codigo de esta página junto con el resto de mis proyecto en mi repositorio en<b>&nbspGitHub.</b></p>
-            </a>
-            <a href="https://github.com/Yoryao" target="_blanck">
-                <img id="repoMap" src="./public/repoMap.jpg" alt="repoMap">
-            </a>
-        </section>
-        <!-- END SECTION REPOSITORIO  -->
-
         <!-- SECTION CONTACTOS -->
-        <section id="sectionContactos" class="section snapSection">
+        <section id="sectionContactos" class="section">
             <h3>Contacto</h3>
             <p class="sectionP" id="pContactos">Si te interesa mi perfil, tienes alguna consulta o sugerencia, o crees
                 que te puedo
                 ayudar, no dudes en contactarme.</p>
             <div id="contactContainer">
                 <div><a href="https://www.linkedin.com/in/jorge-rivera-desarrollador-web/" target="_blanck"><img
-                            class="imgContact" src="./public/inIconContac.png" alt="linkedinLogo"></a></div>
+                            class="imgContact" src="./public/contact/contactLinkedinLogo.png" alt="linkedinLogo"></a></div>
                 <div><a href="https://wa.me/541136188888" target="_blanck"><img class="imgContact"
-                            src="./public/waIconContact.png" alt="whatsappLogo"></a></div>
-                <div><a href="mailto:jorgejoaquinrivera@gmail.com"><img class="imgContact" src="./public/gmIconContact.png"
+                            src="./public/contact/contactWhatsappLogo.png" alt="whatsappLogo"></a></div>
+                <div><a href="mailto:jorgejoaquinrivera@gmail.com"><img class="imgContact" src="./public/contact/contactGmailLogo.png"
                             alt="gmailLogo" title="jorgejoaquinrivera@gmail.com"></a></div>
+                <div><a href="https://github.com/Yoryao"><img class="imgContact" src="./public/contact/contactGithubLogo.png"
+                            alt="gitHubLogo"></a></div>
             </div>
         </section>
         <!-- END SECTION CONTACTOS  -->
@@ -342,13 +332,14 @@
 
     <!-- SECTION FOOTER -->
     <footer>
-        <div id="footerText">Diseño y desarrollo por Jorge Rivera. Febrero 2022.
-            <a class="footerLink" href="https://github.com/Yoryao/webPersonal" target="_blanck">Web Repo</a>
-            <a class="footerLink" href="https://github.com/Yoryao/webPersonal/blob/main/readme.MD" target="_blanck">Readme.MD</a>
+        <div id="footerText">
+            <p>Diseño y desarrollo por Jorge Rivera. Febrero 2022.
+            <a class="footerLink" id="footerLinkRepo" href="https://github.com/Yoryao/webPersonal" target="_blanck">Web Repo</a>
+            <a class="footerLink" id="footerLinkReadme" href="https://github.com/Yoryao/webPersonal/blob/main/readme.MD" target="_blanck">Readme.MD</a></p>
         </div>
-        <div>
+        <div id="footerImgContainer">
             <a href="#home">
-            <img class="imgHome" src="./public/iconHome.png" alt="homeIcon">
+            <img id="footerImgHome" src="./public/footer/arrowUpImg.png" alt="arrowUpImg">
             </a>
         </div>
     </footer>

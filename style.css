@@ -38,6 +38,9 @@ body {
   background: #f8fcfb;
 }
 /* MAIN--------------------------------------*/
+a {
+  text-decoration: none;
+}
 
 h2, h3 {
   font-size: 1.7em;
@@ -87,21 +90,11 @@ p {
   text-align: left;
 }
 
-
-
-/* MODAL CV ----------------------------------*/
-
-
-#cvBtn {
-  padding-top: 10px;
-}
-button {
-  padding: 5px 10px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-#cvBtn > button > a {
-  text-decoration: none;
+#cvBtnContainer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .cvButton {
@@ -111,33 +104,83 @@ button {
   border-radius: 24px;
   border-style: none;
   box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
-    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
   box-sizing: border-box;
-  color: #3c4043;
+  color: black;
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Google Sans", Roboto, Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  height: 36px;
+  font-size: 1em;
+  font-weight: 700;
+  height: 2em;
   justify-content: center;
-  letter-spacing: 0.25px;
   line-height: normal;
   max-width: 100%;
   padding: 2px 24px;
   text-align: center;
   text-transform: none;
   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
   touch-action: manipulation;
   width: auto;
 }
 
-.cvButton:hover {
-  background: #f6f9fe;
-  color: #174ea6;
+/* MODAL CV ----------------------------------*/
+
+.modalContainer {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 2s ease-in-out;
 }
+
+.modalContenido {
+  display: flex;
+  flex-direction:column;
+  align-content: center;
+  background-color: aqua;
+  border-radius: 5%;
+  width: 94%;
+  padding:10% 5%;
+  margin-top: 10%;
+  margin-left:  2%;
+  position: relative;
+}
+.modalContenido > button {
+  width: 95%;
+}
+
+#modalJs:target,
+#modalCv:target,
+#modalReact:target,
+#modalUtn:target,
+#modalAaci:target,
+#modalBV:target,
+#modalComunicacion:target,
+#modalEducacionIt:target {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+
+.document {
+  border-radius: 5%;
+  padding-top: 5px;
+  width: 95%;
+  padding-right: auto;
+  padding-left:auto;
+  height: auto;
+}  
+
+
+
+
 
 
 
@@ -176,14 +219,6 @@ button {
 
 
 
-
-.document {
-  border-radius: 5%;
-  padding-top: 5px;
-  width: 95%;
-  height: auto;
-}
-
 .documentCert {
   border-radius: 5%;
   padding-top: 5px;
@@ -193,38 +228,6 @@ button {
 
 /* MODAL */
 
-.modal-contenido {
-  background-color: aqua;
-  border-radius: 5%;
-  width: 95%;
-  padding: 10px 20px;
-  margin: 20% auto;
-  position: relative;
-}
-.modal {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  pointer-events: none;
-  transition: all 2s ease-in-out;
-}
-
-#modalJs:target,
-#modalCv:target,
-#modalReact:target,
-#modalUtn:target,
-#modalAaci:target,
-#modalBV:target,
-#modalComunicacion:target,
-#modalEducacionIt:target {
-  opacity: 1;
-  pointer-events: auto;
-  cursor: pointer;
-}
 
 
 .nav-bar {
@@ -462,8 +465,7 @@ i {
   padding-bottom: 30px;
 }
 
-#sectionContactos > p,
- {
+#sectionContactos > p {
   width: 90%;
   align-content: center;
   justify-content: center;

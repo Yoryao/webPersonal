@@ -75,12 +75,21 @@ h1 {
 
 /* ABOUT ME--------------------------------------*/
 
-#sectionSobreMi {
+#sectionSobreMi, #sectionEstudios, #sectionCertificado, #sectionTecnologias, #sectionExperiencia {
   height: 100vh;
   width: 94%;
   padding-top: 35px;
   margin-left: 3%;
   margin-right: 3%;
+}
+
+#sectionCertificado{
+  height: 80vh;
+}
+
+#sectionExperiencia{ /*BORRAR*/
+  padding-bottom: 1050px;
+  margin-bottom: 1500px;
 }
 
 p {
@@ -141,18 +150,21 @@ p {
 
 .modalContenido {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   align-content: center;
   background-color: aqua;
   border-radius: 5%;
   width: 94%;
   padding:10% 5%;
-  margin-top: 10%;
-  margin-left:  2%;
+  margin-top: 8%;
+  margin-left:  auto;
+  margin-right: auto;
   position: relative;
 }
 .modalContenido > button {
-  width: 95%;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #modalJs:target,
@@ -168,65 +180,108 @@ p {
   cursor: pointer;
 }
 
-
 .document {
   border-radius: 5%;
-  padding-top: 5px;
-  width: 95%;
-  padding-right: auto;
-  padding-left:auto;
+  padding-top: 15px;
+  width: 97%; 
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
 }  
 
-
-
-
-
-
-
-
-
 /* END ABOUTE ME--------------------------------------*/
 
+/* ESTUDIES-------------------------------------------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.section:last-child {
-  margin-bottom: 45px;
-}
-
-
-
-
-
-
-
-
-
-
-.documentCert {
+.imgArrow {
+  border: 1px black solid;
   border-radius: 5%;
-  padding-top: 5px;
-  width: 95%;
-  height: auto;
+  height: 22px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: text-top;
 }
 
-/* MODAL */
+.certificadosLista {
+  display: inline-flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 1em;
+  padding-left: 0;
+}
+
+.certificadosLista > li {
+display: flex;
+justify-content: space-between;
+padding-bottom: 10px;}
+
+/* END ESTUDIOS--------------------------------------------------*/
+
+/* END TECNOLOGIAS-----------------------------------------------*/
+
+#sectionTecnologias {
+  height: 45vh;
+}
+
+.imgTecnologia {
+  height: 15vh;
+  padding-left: 20px;
+}
+
+.slider {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  border: #333 2px solid;
+}
+
+.slider ul {
+  display: flex;
+  width: 200%;
+  animation: linear;
+  animation: cambio 10s infinite alternate;
+  animation-timing-function: linear;
+}
+
+.slider li {
+  list-style: none;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+
+/* END TECNOLOGIAS-------------------------------------------------------*/
+
+/* EXPERIENCIA-----------------------------------------------------------*/
+
+#sectionExperiencia{ /*BORRAR*/
+  padding-bottom: 1050px;
+  margin-bottom: 1500px;
+}
+
+#sectionExperiencia > h3 {
+  /* font-size: 1.3em */
+}
+
+
+#cardExperiencia {
+  width: 95%;
+
+}
+
+.sectionP {
+  padding: 0;
+  font-size: 0.9em;
+}
+
+/* END EXPERIENCIA */
 
 
 
@@ -307,129 +362,6 @@ i {
   margin-left: 0;
 }
 
-
-
-#subtitle {
-  font-size: 1.5;
-}
-/* ESTUDIOS */
-
-
-
-#sectionCertificado {
-  height: 60vh;
-  width: 95%;
-  padding-top: 60px;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-#sectionEstudios {
-  height: 100vh;
-  width: 95%;
-  padding-top: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-
-
-
-
-
-
-
-
-
-
-#repoLink {
-  text-align: center;
-  text-decoration: none;
-}
-
-.imgArrow {
-  border: 1px black solid;
-  color: greenyellow;
-  border-radius: 5%;
-  height: 22px;
-  margin-left: 10px;
-  vertical-align: text-top;
-}
-
-.certificadosLista {
-  display: inline-flex;
-  flex-direction: column;
-  list-style: none;
-  /* align-items: flex-start; */
-  font-size: 1.1em;
-  padding-left: 0;
-}
-/* END ESTUDIOS */
-
-/* END TECNOLOGIAS */
-
-#sectionTecnologias {
-  height: 50vh;
-  padding-top: 55px;
-}
-
-.imgTecnologia {
-  height: 15vh;
-  padding-left: 20px;
-}
-
-.slider {
-  width: 90%;
-  margin: auto;
-  overflow: hidden;
-  border: #333 2px solid;
-}
-
-.slider ul {
-  display: flex;
-  width: 200%;
-  animation: linear;
-  animation: cambio 10s infinite alternate;
-  animation-timing-function: linear;
-}
-
-.slider li {
-  list-style: none;
-}
-
-@keyframes cambio {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -300%;
-  }
-}
-
-/* END TECNOLOGIAS */
-
-/* EXPERIENCIA */
-
-#sectionExperiencia {
-  height: 100vh;
-  width: 90%;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
-#cardExperiencia {
-  width: 100%;
-}
-
-#experienciaP1,
-#experienciaP2 {
-  padding: 0;
-  font-size: 0.9em;
-}
-
-/* END EXPERIENCIA */
 
 
 
@@ -529,21 +461,6 @@ padding-right: 15px;
 
 /* END FOOTER------------------------------------------------*/
 
-.snapContainer {
-  height: 100vh;
-  overflow: auto;
-  scroll-snap-type: y mandatory;
-}
-
-.snapSection {
-  scroll-snap-align: start;
-  scroll-padding-top: 60vh;
-}
-
-.snapSectionCenter {
-  scroll-snap-align: center;
-  scroll-padding-top: 60vh;
-}
 
 .cardProyecto {
   width: 90%;

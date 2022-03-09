@@ -2,25 +2,24 @@
 @media only screen and (max-width: 600px) {...}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {
+  ...;
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+  ...;
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+  ...;
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
-
-
-
-
-
-
-
-
-
+@media only screen and (min-width: 1200px) {
+  ...;
+}
 
 * {
   box-sizing: border-box;
@@ -42,7 +41,8 @@ a {
   text-decoration: none;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 1.7em;
   text-align: center;
 }
@@ -75,25 +75,31 @@ h1 {
 
 /* ABOUT ME--------------------------------------*/
 
-#sectionSobreMi, #sectionEstudios, #sectionCertificado, #sectionTecnologias, #sectionExperiencia {
-  height: 100vh;
+#sectionSobreMi,
+#sectionEstudios,
+#sectionCertificado,
+#sectionTecnologias,
+#sectionExperiencia,
+#sectionProyectos,
+#sectionContactos {
+  /* height: 100vh; */
   width: 94%;
   padding-top: 35px;
   margin-left: 3%;
   margin-right: 3%;
 }
 
-#sectionCertificado{
+#sectionCertificado {
   height: 80vh;
 }
 
-#sectionExperiencia{ /*BORRAR*/
-  padding-bottom: 1050px;
-  margin-bottom: 1500px;
+#sectionExperiencia {
+  /*BORRAR*/
+  height: unset;
 }
 
 p {
-  font-size: .8em;
+  font-size: 0.8em;
   padding: 5px 15px 5px 15px;
   margin: auto;
   text-align: left;
@@ -113,7 +119,7 @@ p {
   border-radius: 24px;
   border-style: none;
   box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
-  rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
   box-sizing: border-box;
   color: black;
   cursor: pointer;
@@ -129,7 +135,7 @@ p {
   text-align: center;
   text-transform: none;
   transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1),
-  opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
   touch-action: manipulation;
   width: auto;
 }
@@ -155,9 +161,9 @@ p {
   background-color: aqua;
   border-radius: 5%;
   width: 94%;
-  padding:10% 5%;
+  padding: 10% 5%;
   margin-top: 8%;
-  margin-left:  auto;
+  margin-left: auto;
   margin-right: auto;
   position: relative;
 }
@@ -183,16 +189,15 @@ p {
 .document {
   border-radius: 5%;
   padding-top: 15px;
-  width: 97%; 
+  width: 97%;
   margin-left: auto;
   margin-right: auto;
   height: auto;
-}  
+}
 
 /* END ABOUTE ME--------------------------------------*/
 
 /* ESTUDIES-------------------------------------------*/
-
 
 .imgArrow {
   border: 1px black solid;
@@ -212,9 +217,10 @@ p {
 }
 
 .certificadosLista > li {
-display: flex;
-justify-content: space-between;
-padding-bottom: 10px;}
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
 
 /* END ESTUDIOS--------------------------------------------------*/
 
@@ -261,29 +267,113 @@ padding-bottom: 10px;}
 
 /* EXPERIENCIA-----------------------------------------------------------*/
 
-#sectionExperiencia{ /*BORRAR*/
-  padding-bottom: 1050px;
-  margin-bottom: 1500px;
-}
-
-#sectionExperiencia > h3 {
-  /* font-size: 1.3em */
-}
-
-
 #cardExperiencia {
   width: 95%;
-
 }
 
 .sectionP {
-  padding: 0;
   font-size: 0.9em;
 }
 
-/* END EXPERIENCIA */
+/* END EXPERIENCIA--------------------------------------------------------*/
 
+/* PROYECTOS--------------------------------------------------------*/
 
+.cardProyecto {
+  width: 90%;
+  border-radius: 5%;
+  margin: 5% auto 5% auto;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #79d1c3;
+  text-align: center;
+}
+
+.imgProyect {
+  width: 80%;
+  height: auto;
+  border-radius: 5%;
+  border: 1px solid black;
+}
+
+.imgProyect:hover {
+  cursor: pointer;
+}
+
+/* END PROYECTOS--------------------------------------------------------*/
+
+/* CONTACT-------------------------------------------------*/
+
+#sectionContactos {
+  margin-top: 5px;
+  padding-bottom: 100px;
+  text-align: center;
+  width: 90%;
+}
+
+#contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contactImgContainer {
+  width: 50%;
+  height: auto;
+  padding-top: 15px;
+}
+
+.imgContact {
+  width: 35%;
+}
+
+/* END CONTACT--------------------------------------------*/
+
+/*FOOTER--------------------------------------------------*/
+footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 8vh;
+  left: 0;
+  bottom: 0;
+  background-color: #6892d5;
+  color: black;
+  justify-content: space-between;
+}
+
+#footerText {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+#footerImgContainer {
+  padding-right: 15px;
+}
+
+#footerImgHome {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  color: black;
+  border: black 1px solid;
+  border-radius: 5%;
+}
+
+#footerText > p,
+a {
+  display: inline;
+  font-size: 0.8em;
+  text-align: left;
+}
+.footerLink {
+  color: green;
+  text-decoration: none;
+}
+
+/* END FOOTER------------------------------------------------*/
 
 .nav-bar {
   background-color: #6892d5;
@@ -301,8 +391,6 @@ i {
   padding-right: 10px;
   padding-left: 10px;
 }
-
-
 
 .menu,
 .submenu {
@@ -356,140 +444,8 @@ i {
   padding-left: 35px;
 }
 
-
-
 .mostrar {
   margin-left: 0;
-}
-
-
-
-
-.cardProyecto {
-  width: 90%;
-  border-radius: 5%;
-  margin: 5px auto 5px auto;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  background-color: #79d1c3;
-}
-
-.cardProyecto > h6 {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.imgProyect {
-  width: 80%;
-  height: auto;
-  border-radius: 5%;
-  border: 1px solid black;
-}
-
-.imgProyect:hover {
-  cursor: pointer;
-}
-
-
-
-/* CONTACT-------------------------------------------------*/
-#sectionContactos {
-  padding-bottom: 30px;
-}
-
-#sectionContactos > p {
-  width: 90%;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-}
-
-#contactContainer {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.imgContact {
-  width: 35%;
-}
-
-/* END CONTACT--------------------------------------------*/
-
-/*FOOTER--------------------------------------------------*/
-footer {
-  display: flex;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  height: 8vh;
-  left: 0;
-  bottom: 0;
-  background-color: #6892d5;
-  color: black;
-  justify-content: space-between;
- }
-
-#footerText {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  text-align: left;
-}
-
-#footerImgContainer{
-padding-right: 15px;
-}
-
-#footerImgHome {
-  height: 5vh;
-  display: flex;
-  align-items: center;
-  color:black;
-  border: black 1px solid;
-  border-radius: 5%;
-}
-
-#footerText > p, a  {
-  display: inline;
-  font-size: .8em;
-  text-align: left;
-}
-.footerLink {
-  color:green;
-  text-decoration: none;
-}
-
-/* END FOOTER------------------------------------------------*/
-
-
-.cardProyecto {
-  width: 90%;
-  border-radius: 5%;
-  margin: 5px auto 5px auto;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  background-color: #79d1c3;
-}
-
-.cardProyecto > h6 {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.imgProyect {
-  width: 80%;
-  height: auto;
-  border-radius: 5%;
-  border: 1px solid black;
-}
-
-.imgProyect:hover {
-  cursor: pointer;
-}
-
-#sectionProyectos {
-  height: auto;
-  padding-top: 140px;
 }
 
 @media (min-width: 1024px) {
@@ -568,7 +524,6 @@ padding-right: 15px;
     font-size: 1.8em;
     padding-top: 120px;
   }
-
 
   .cvButton {
     align-items: center;

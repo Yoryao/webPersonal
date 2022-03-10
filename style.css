@@ -453,7 +453,7 @@ i {
       margin-left: 0;
     }
     100% {
-      margin-left: -110%;
+      margin-left: 0%;
     }
   }
 
@@ -535,7 +535,7 @@ i {
 
   #home {
     height: 90vh;
-    font-size: 2em;
+    font-size: 3em;
     display: flex;
     flex-direction: row;
   }
@@ -552,13 +552,21 @@ i {
   }
 
   .sectionP {
-    font-size: 1em;
+    font-size: 2em;
   }
 
   h2,
   h3 {
-    font-size: 2em;
+    font-size: 3em;
     text-align: center;
+  }
+
+  h4 {
+    font-size: 2em;
+  }
+
+  h6 {
+    font-size: 1.5em;
   }
 
   #cvBtnContainer {
@@ -568,8 +576,14 @@ i {
     margin-top: 20px;
   }
 
+  .cvButton{
+    font-size: 2em;
+  }
+
+ 
+
   p {
-    font-size: 1em;
+    font-size: 2em;
     padding: 5px 15px 5px 15px;
     margin: auto;
     text-align: left;
@@ -581,31 +595,117 @@ i {
     margin-left: auto;
   }
 
-  @keyframes cambio {
-    0% {
-      margin-left: 0;
-    }
-    100% {
-      margin-left: -60%;
-    }
+  .certificadosLista{
+    font-size: 2em;
   }
 
-  .contactImgContainer {
+  .imgArrow {
+  
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    vertical-align: text-top;
+  }
+
+
+   .contactImgContainer {
     width: 25%;
   }
 
   .imgContact {
     width: 20%;
   }
+  #pContactos{
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  footer{
+    font-size: 2em;
+  }
+
+.footerLink {
+    color: black;
+  }
+
+
+.modalContenido {
+  height: 90vh;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:  15px;
+  padding-top: 5px;
+  position: relative;
+}
+.modalContenido > button {
+  width: 25%;
+  margin-top:  5px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#modalJs:target,
+#modalCv:target,
+#modalReact:target,
+#modalUtn:target,
+#modalAaci:target,
+#modalBV:target,
+#modalComunicacion:target,
+#modalEducacionIt:target {
+  opacity: 1;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.document {
+
+  padding-top: 5px;
+  width: 70%;
+}
+
+.documentWide {
+  padding-top: 30px;
+ width: 100%;
+}
+
+.btnWide {
+  width: 5%;
+ 
+  margin-top:  5px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#imgAaci, #imgEducacionIT{
+  height: 95%;
+}
+
+#imgBV{
+  height: 100%;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -50%;
+  }
+}
+
 }
 
 @media (min-width: 1200px) {
+
   @keyframes cambio {
     0% {
       margin-left: 0;
     }
     100% {
-      margin-left: -30%;
+      margin-left: 0%;
     }
   }
 }

@@ -21,6 +21,8 @@ body {
   width: 100%;
   margin-left: 0;
   margin-right: 0;
+  justify-content: center;
+  align-content: center;
 }
 /* MAIN--------------------------------------*/
 a {

@@ -1,24 +1,15 @@
 
 //-------- INICIO FUNCIONALIDAD NAVBAR Y MENUS DESPLEGABLE
 
-//
 {
-
   //capturo el boton menu y el menu
 const btnMenu = document.querySelector("#btnMenu");
 const menu = document.querySelector("#menu");
-
 
 //al apretar boton menu, muestro el id menu
 btnMenu.addEventListener("click", function () {
   menu.classList.toggle("mostrar");
 });
-
-
-
-
-
-
 
 const btnLi = document.querySelector("#menu");
 btnLi.addEventListener("click", function(){
